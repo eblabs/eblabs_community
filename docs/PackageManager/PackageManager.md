@@ -13,7 +13,7 @@ The package manager is a system for installing and managing all of your eblabs.c
 ### Online Installation
 
  1. Download Drag and Drop installer here. [download drag and drop installer here](https://raw.githubusercontent.com/eblabs/eblabs_docs/master/Installer/eblabs_drag_drop_install.py)
-2. Drag file into Maya. This will run the installer, from here you can manage all of your eblabs tools.
+2. Simply Drag and Drop the file into Maya. This will run the installer, from here you can manage all of your eblabs tools.
 ![Drag and Drop](https://raw.githubusercontent.com/eblabs/eblabs_docs/master/docs/PackageManager/eblabsPackageManager_installer.gif)
 3. After installation, you will see a success popup. <br/> ![](https://raw.githubusercontent.com/eblabs/eblabs_docs/master/docs/PackageManager/eblabsPackageManager_installer_success.png)
 
