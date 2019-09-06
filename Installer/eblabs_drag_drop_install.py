@@ -50,10 +50,9 @@ class Debugging():
         '''
         Logging
         '''
-        print("""DEBUGGING LOG""")
         if args:
             for i, a in enumerate(args):
-                print(i, a)
+                print('DEBUGGING:', i, a)
 
 class Installer():
     Instance = False
@@ -75,6 +74,7 @@ class Installer():
         is_online = Utils.internet_on()
         if not is_online:
             status = Status.Offline
+            Debugging.debug_log(78, 'Offline')
         else:
             try:
                 '''
@@ -89,6 +89,7 @@ class Installer():
                     success = Utils.install_package(filepath=temp_filepath)
                     if success:
                         status = Status.Success
+                        Debugging.debug_log(92, 'Success')
                     else:
                         Debugging.debug_log(94, 'Error')
                         status = Status.Error
@@ -201,13 +202,16 @@ class Utils():
         try:
             urllib.urlretrieve(url, filename=temp_file)
             if os.path.exists(temp_file):
+                Debugging.debug_log(205, 'file download success')
                 return temp_file
         except Exception as e:
+            Debugging.debug_log(208, Exception, e)
             pass
 
         '''
         fallback
         '''
+        Debugging.debug_log(213, 'file download failed')
         return False
 
     @classmethod
@@ -250,15 +254,19 @@ class Utils():
         2. run installer with package file
         '''
         temp_folder = cls.get_clean_temp_folder()
+        Debugging.debug_log(257, 'temp_folder', temp_folder)
         if not temp_folder:
             return False
 
         '''
         unzip into install path
         '''
-        with zipfile.ZipFile(filepath, 'r') as z:
-            z.extractall(temp_folder)
-
+        try:
+            with zipfile.ZipFile(filepath, 'r') as z:
+                z.extractall(temp_folder)
+            Debugging.debug_log(268, 'unzip into install path: Success', temp_folder, filepath)
+        except Exception as e:
+            Debugging.debug_log(268, 'unzip into install path: Fail', Exception, e, temp_folder, filepath)
         '''
         add init files
         '''
@@ -268,6 +276,7 @@ class Utils():
         for f in init_files:
             if not os.path.isfile(f):
                 cls.touch(f)
+                Debugging.debug_log(279, 'add init files')
 
         '''
         run installer command
