@@ -19,6 +19,7 @@ import sys
 import zipfile
 import shutil
 import traceback
+import socket
 from functools import partial
 from maya import cmds
 
@@ -172,15 +173,32 @@ class Utils():
 
     @classmethod
     def internet_on(cls):
+        
+        try:
+            url = 'github.com'
+            socket.create_connection((url, 80))
+            return True
+        except Exception as e:
+            print(184, Exception, e)
+        return False
+        
         '''
-        use github as an online check
-        '''
+
         try:
             url = 'https://github.com'
             urllib2.urlopen(url, timeout=1)
             return True
         except urllib2.URLError as err:
             return False
+        '''
+        '''
+        try:
+            url = 'https://github.com'
+            urllib.urlopen(url, timeout=1)
+            return True
+        except urllib2.URLError as err:
+            return False
+        '''
 
     @classmethod
     def download_file(cls, url=''):
@@ -201,7 +219,7 @@ class Utils():
         download
         '''
         try:
-            urllib.urlretrieve(url, filename=temp_file)
+            urllib2.urlretrieve(url, filename=temp_file)
             if os.path.exists(temp_file):
                 Debugging.debug_log(205, 'file download success')
                 return temp_file
