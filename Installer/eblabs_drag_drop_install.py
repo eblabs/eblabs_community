@@ -219,7 +219,7 @@ class Utils():
         download
         '''
         try:
-            urllib2.urlretrieve(url, filename=temp_file)
+            urllib.urlretrieve(url, filename=temp_file)
             if os.path.exists(temp_file):
                 Debugging.debug_log(205, 'file download success')
                 return temp_file
