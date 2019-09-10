@@ -18,6 +18,7 @@ import os
 import sys
 import zipfile
 import shutil
+import traceback
 from functools import partial
 from maya import cmds
 
@@ -300,7 +301,9 @@ class Utils():
             w.display()
             return True
         except Exception as e:
-            Debugging.debug_log(998, 'Install Failed', Exception, e)
+            Debugging.debug_log(303, 'Install Failed', 'isFile:', os.path.isfile(filepath), filepath)
+            Debugging.debug_log(304, 'Install Failed', Exception, e)
+            Debugging.debug_log(304, 'Install Failed', traceback.format_exc())
             return False
 
     @classmethod
