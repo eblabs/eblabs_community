@@ -35,20 +35,20 @@ from maya import cmds
 
 
 class SummaryManager(object):
-    summary_list = []
+    summary_data = []
 
     @classmethod
     def reset(cls):
-        cls.summary_list = []
+        cls.summary_data = []
 
     @classmethod
     def append_item(cls, item):
         if '\n' in item:
             buffer = item.split('/n')
             for b in buffer:
-                cls.summary_list.append(b)
+                cls.summary_data.append(b)
         else:
-            cls.summary_list.append(item)
+            cls.summary_data.append(item)
 
     @classmethod
     def print_summary(cls):
@@ -65,9 +65,9 @@ class SummaryManager(object):
         '''.format(__version__, __version_date__)
         print(summary)
         print_summary_items = ''
-        if cls.summary_list:
+        if cls.summary_data:
             print_summary_items += '+----------------------------------------\n'
-            for i in cls.summary_list:
+            for i in cls.summary_data:
                 print_summary_items += '|' + i + '\n'
             print_summary_items += '+----------------------------------------\n'
         print(print_summary_items)
