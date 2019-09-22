@@ -11,6 +11,15 @@ and updating all of your eblabs tools.
 
 """
 
+__author__ = "Eric Bates, eblabs.com"
+__copyright__ = "Copyright (c)2019, Eric Bates"
+__credits__ = ["Eric Bates"]
+__maintainer__ = "Eric Bates"
+__email__ = "info@eblabs.com"
+__status__ = "Beta"
+__version__ = '0.1.0'
+__version_date__ = '2019-09-22'
+
 import urllib2
 import urllib
 import tempfile
@@ -20,14 +29,63 @@ import zipfile
 import shutil
 import traceback
 import socket
+import json
 from functools import partial
 from maya import cmds
+
+
+class SummaryManager(object):
+    summary_list = []
+
+    @classmethod
+    def reset(cls):
+        cls.summary_list = []
+
+    @classmethod
+    def append_item(cls, item):
+        cls.summary_list.append(item)
+
+    @classmethod
+    def print_summary(cls):
+        summary = '''
+       _      _         _          
+      | |    | |       | |         
+  ___ | |__  | |  __ _ | |__   ___ 
+ / _ \| '_ \ | | / _` || '_ \ / __|
+|  __/| |_) || || (_| || |_) |\__ \\
+ \___||_.__/ |_| \__,_||_.__/ |___/
+ 
+ Drag/Drop Package Manager Install Summary
+ {0} {1}
+        '''.format(__version__, __version_date__)
+        print(summary)
+        print_summary_items = ''
+        if cls.summary_list:
+            print_summary_items += '+----------------------------------------\n'
+            for i in cls.summary_list:
+                print_summary_items += '|' + i + '\n'
+            print_summary_items += '+----------------------------------------\n'
+        print(print_summary_items)
 
 '''
 launcher
 '''
+
 def onMayaDroppedPythonFile(*args, **kwargs):
+    '''
+    reset summary
+    '''
+    SummaryManager.reset()
+
+    '''
+    run installer
+    '''
     Installer.run_installer()
+
+    '''
+    print summary
+    '''
+    SummaryManager.print_summary()
 
 
 class Status(object):
@@ -76,14 +134,18 @@ class Installer():
         is_online = Utils.internet_on()
         if not is_online:
             status = Status.Offline
-            Debugging.debug_log(78, 'Offline')
+            SummaryManager.append_item('Internet Check: Offline')
         else:
             try:
                 '''
                 attempt to install
                 '''
-                url = 'https://github.com/eblabs/eblabs_docs/raw/master/Installer/eblabs_PackageManager_0.0.zip'
-                temp_filepath = Utils.download_file(url=url)
+
+                json_info_url = 'https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/installer_info.json'
+                # 'https://github.com/eblabs/eblabs_community/raw/master/Installer/eblabs_PackageManager_0.0.zip'
+
+                package_url = json_info_url['installer_url']
+                temp_filepath = Utils.download_file(url=json_info_url)
                 if temp_filepath:
                     '''
                     woot, file downloaded
@@ -91,12 +153,12 @@ class Installer():
                     success = Utils.install_package(filepath=temp_filepath)
                     if success:
                         status = Status.Success
-                        Debugging.debug_log(92, 'Success')
+                        SummaryManager.append_item('Install Package: Success')
                     else:
-                        Debugging.debug_log(94, 'Error')
+                        SummaryManager.append_item('Install Package: Error')
                         status = Status.Error
             except Exception as e:
-                Debugging.debug_log(97, Exception, e)
+                SummaryManager.append_item('Install Package: Fail: {0}, {1}'.format(Exception, e))
                 status = Status.Error
 
         '''
@@ -106,6 +168,8 @@ class Installer():
             cls.success_popup()
         else:
             cls.fail_popup()
+
+
 
     @classmethod
     def success_popup(cls):
@@ -136,7 +200,7 @@ there is another issue. Please try the offline install method.
 For support use the contact page at eblabs.com.
 
 1. Download the Offline Installer, it can be found here:
-https://github.com/eblabs/eblabs_docs/blob/master/Installer/eblabs_PackageManager_0.0.zip
+https://github.com/eblabs/eblabs_community/blob/master/Installer/eblabs_PackageManager_0.0.zip
 
 2. Click Install and select the installer file.
 
@@ -179,17 +243,18 @@ class Utils():
             socket.create_connection((url, 80))
             return True
         except Exception as e:
-            print(184, Exception, e)
+            SummaryManager.append_item('Internet Check: Fail: {0}, {1}'.format(Exception, e))
+            #print(184, Exception, e)
         return False
-        
-        '''
 
-        try:
-            url = 'https://github.com'
-            urllib2.urlopen(url, timeout=1)
-            return True
-        except urllib2.URLError as err:
-            return False
+        # noinspection PyUnreachableCode
+        '''
+                try:
+                    url = 'https://github.com'
+                    urllib2.urlopen(url, timeout=1)
+                    return True
+                except urllib2.URLError as err:
+                    return False
         '''
         '''
         try:
@@ -221,16 +286,14 @@ class Utils():
         try:
             urllib.urlretrieve(url, filename=temp_file)
             if os.path.exists(temp_file):
-                Debugging.debug_log(205, 'file download success')
+                SummaryManager.append_item('Download Package: Success')
+                #Debugging.debug_log(205, 'file download success')
                 return temp_file
         except Exception as e:
-            Debugging.debug_log(208, Exception, e)
+            SummaryManager.append_item('Download Package: Fail: {0}, {1}'.format(Exception, e))
+            #Debugging.debug_log(208, Exception, e)
             pass
 
-        '''
-        fallback
-        '''
-        Debugging.debug_log(213, 'file download failed')
         return False
 
     @classmethod
@@ -241,6 +304,16 @@ class Utils():
         if path:
             return str(path[0])
         else:
+            return False
+
+    @classmethod
+    def read_json_from_url(cls, url=''):
+        #https://stackoverflow.com/questions/1393324/in-python-given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-cont
+        try:
+            url_string = urllib.urlopen(url).read()
+            data = json.loads(url_string)
+            return data
+        except:
             return False
 
     @classmethod
@@ -273,7 +346,8 @@ class Utils():
         2. run installer with package file
         '''
         temp_folder = cls.get_clean_temp_folder()
-        Debugging.debug_log(257, 'temp_folder', temp_folder)
+        #Debugging.debug_log(257, 'temp_folder', temp_folder)
+        SummaryManager.append_item('Install Package: Temp Folder: {0}'.format(temp_folder))
         if not temp_folder:
             return False
 
@@ -283,9 +357,11 @@ class Utils():
         try:
             with zipfile.ZipFile(filepath, 'r') as z:
                 z.extractall(temp_folder)
-            Debugging.debug_log(268, 'unzip into install path: Success', temp_folder, filepath)
+            #Debugging.debug_log(268, 'unzip into install path: Success', temp_folder, filepath)
+            SummaryManager.append_item('Unzip: Success: {0}, {1}'.format(temp_folder, filepath))
         except Exception as e:
-            Debugging.debug_log(268, 'unzip into install path: Fail', Exception, e, temp_folder, filepath)
+            #Debugging.debug_log(268, 'unzip into install path: Fail', Exception, e, temp_folder, filepath)
+            SummaryManager.append_item('Unzip: Fail: {0}, {1}, {2}, {3}'.format(Exception, e, temp_folder, filepath))
         '''
         add init files
         '''
@@ -295,7 +371,8 @@ class Utils():
         for f in init_files:
             if not os.path.isfile(f):
                 cls.touch(f)
-                Debugging.debug_log(279, 'add init files')
+                #Debugging.debug_log(279, 'add init files')
+                SummaryManager.append_item('Adding Init Files')
 
         '''
         run installer command
@@ -319,9 +396,12 @@ class Utils():
             w.display()
             return True
         except Exception as e:
-            Debugging.debug_log(303, 'Install Failed', 'isFile:', os.path.isfile(filepath), filepath)
-            Debugging.debug_log(304, 'Install Failed', Exception, e)
-            Debugging.debug_log(304, 'Install Failed', traceback.format_exc())
+            SummaryManager.append_item('Install Failed: isFile: {0}, {1}'.format(os.path.isfile(filepath), filepath))
+            #Debugging.debug_log(303, 'Install Failed', 'isFile:', os.path.isfile(filepath), filepath)
+            #Debugging.debug_log(304, 'Install Failed', Exception, e)
+            SummaryManager.append_item('Install Failed: Exception: {0}, {1}'.format(Exception, e))
+            #Debugging.debug_log(304, 'Install Failed', traceback.format_exc())
+            SummaryManager.append_item('Install Failed: Traceback: {0}'.format(traceback.format_exc()))
             return False
 
     @classmethod
