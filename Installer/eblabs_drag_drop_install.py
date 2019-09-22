@@ -43,7 +43,12 @@ class SummaryManager(object):
 
     @classmethod
     def append_item(cls, item):
-        cls.summary_list.append(item)
+        if '\n' in item:
+            buffer = item.split('/n')
+            for b in buffer:
+                cls.summary_list.append(b)
+        else:
+            cls.summary_list.append(item)
 
     @classmethod
     def print_summary(cls):
@@ -94,26 +99,6 @@ class Status(object):
     Success = 3
     Error = 4
 
-
-class Debugging():
-
-    display_logging = True
-
-    @classmethod
-    def debug_log(cls, *args, **kwargs):
-        '''
-        No Logging
-        '''
-        if not cls.display_logging:
-            return False
-
-        '''
-        Logging
-        '''
-        if args:
-            for i, a in enumerate(args):
-                print('DEBUGGING:', i, a)
-
 class Installer():
     Instance = False
 
@@ -142,10 +127,11 @@ class Installer():
                 '''
 
                 json_info_url = 'https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/installer_info.json'
+                info = Utils.read_json_from_url(json_info_url)
                 # 'https://github.com/eblabs/eblabs_community/raw/master/Installer/eblabs_PackageManager_0.0.zip'
 
-                package_url = json_info_url['installer_url']
-                temp_filepath = Utils.download_file(url=json_info_url)
+                package_url = info['installer_url']
+                temp_filepath = Utils.download_file(url=package_url)
                 if temp_filepath:
                     '''
                     woot, file downloaded
@@ -159,6 +145,7 @@ class Installer():
                         status = Status.Error
             except Exception as e:
                 SummaryManager.append_item('Install Package: Fail: {0}, {1}'.format(Exception, e))
+                SummaryManager.append_item('Install Package: Traceback: {0}'.format(traceback.format_exc()))
                 status = Status.Error
 
         '''
