@@ -186,8 +186,8 @@ there is another issue. Please try the offline install method.
 
 For support use the contact page at eblabs.com.
 
-1. Download the Offline Installer, it can be found here:
-https://github.com/eblabs/eblabs_community/blob/master/Installer/eblabs_PackageManager_0.0.zip
+1. Download the Latest Offline Installer, it can be found here:
+https://github.com/eblabs/eblabs_community/blob/master/Installer/versions/
 
 2. Click Install and select the installer file.
 
