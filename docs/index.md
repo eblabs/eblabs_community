@@ -1,2 +1,2 @@
 Test Root Index.md
-[a relative link](PackageManager/PackageManager.md)
+[Package Manager](PackageManager/PackageManager.md)
