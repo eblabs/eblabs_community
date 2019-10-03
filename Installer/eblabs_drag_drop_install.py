@@ -286,7 +286,7 @@ class Utils():
     @classmethod
     def ask_user_for_package_file(cls):
         # get path
-        filters = 'eblabs_PackageManager_0.0.zip (eblabs_PackageManager_0.0.zip)'
+        filters = 'eblabs_PackageManager_*.zip (eblabs_PackageManager_*.zip)'
         path = cmds.fileDialog2(fileFilter=filters, dialogStyle=2, fileMode=1, okCaption='OK')
         if path:
             return str(path[0])
