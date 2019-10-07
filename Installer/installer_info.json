@@ -1,5 +1,5 @@
 {
-    "installer_url": "https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.3.0.zip", 
+    "installer_url": "https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.4.0.zip", 
     "versions": {
         "CodePuncher": "1.0.2019.09.10", 
         "GroupMoveTool": "1.0.2019.09.10", 

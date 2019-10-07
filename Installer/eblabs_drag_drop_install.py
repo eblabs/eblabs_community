@@ -374,7 +374,7 @@ class Utils():
             '''
             install package manager
             '''
-            tool.Utils.install_package(filepaths=[filepath])
+            tool.Utils.Core.install_package(filepaths=[filepath])
 
             '''
             run
@@ -384,10 +384,7 @@ class Utils():
             return True
         except Exception as e:
             SummaryManager.append_item('Install Failed: isFile: {0}, {1}'.format(os.path.isfile(filepath), filepath))
-            #Debugging.debug_log(303, 'Install Failed', 'isFile:', os.path.isfile(filepath), filepath)
-            #Debugging.debug_log(304, 'Install Failed', Exception, e)
             SummaryManager.append_item('Install Failed: Exception: {0}, {1}'.format(Exception, e))
-            #Debugging.debug_log(304, 'Install Failed', traceback.format_exc())
             SummaryManager.append_item('Install Failed: Traceback: {0}'.format(traceback.format_exc()))
             return False
 
