@@ -17,7 +17,7 @@ __credits__ = ["Eric Bates"]
 __maintainer__ = "Eric Bates"
 __email__ = "info@eblabs.com"
 __status__ = "Beta"
-__version__ = '0.4.7'
+__version__ = '0.4.8'
 __version_date__ = '2019-11-25'
 
 import urllib2
@@ -338,7 +338,6 @@ class Utils():
         2. run installer with package file
         '''
         temp_folder = cls.get_clean_temp_folder()
-        #Debugging.debug_log(257, 'temp_folder', temp_folder)
         SummaryManager.append_item('Install Package: Temp Folder: {0}'.format(temp_folder))
         if not temp_folder:
             return False
@@ -349,10 +348,8 @@ class Utils():
         try:
             with zipfile.ZipFile(filepath, 'r') as z:
                 z.extractall(temp_folder)
-            #Debugging.debug_log(268, 'unzip into install path: Success', temp_folder, filepath)
             SummaryManager.append_item('Unzip: Success: {0}, {1}'.format(temp_folder, filepath))
         except Exception as e:
-            #Debugging.debug_log(268, 'unzip into install path: Fail', Exception, e, temp_folder, filepath)
             SummaryManager.append_item('Unzip: Fail: {0}, {1}, {2}, {3}'.format(Exception, e, temp_folder, filepath))
         '''
         add init files
