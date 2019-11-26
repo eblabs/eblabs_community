@@ -17,8 +17,8 @@ __credits__ = ["Eric Bates"]
 __maintainer__ = "Eric Bates"
 __email__ = "info@eblabs.com"
 __status__ = "Beta"
-__version__ = '0.1.0'
-__version_date__ = '2019-09-22'
+__version__ = '0.1.1'
+__version_date__ = '2019-11-25'
 
 import urllib2
 import urllib
@@ -78,19 +78,9 @@ launcher
 
 def onMayaDroppedPythonFile(*args, **kwargs):
     '''
-    reset summary
-    '''
-    SummaryManager.reset()
-
-    '''
     run installer
     '''
     Installer.run_installer()
-
-    '''
-    print summary
-    '''
-    SummaryManager.print_summary()
 
 
 class Status(object):
@@ -104,6 +94,23 @@ class Installer():
 
     @classmethod
     def run_installer(cls):
+        '''
+        reset summary
+        '''
+        SummaryManager.reset()
+
+        '''
+        run installer
+        '''
+        cls.run_installer_exec()
+
+        '''
+        print summary
+        '''
+        SummaryManager.print_summary()
+
+    @classmethod
+    def run_installer_exec(cls):
         '''
         1. check if online
         2. get package, via online or local
@@ -155,8 +162,6 @@ class Installer():
             cls.success_popup()
         else:
             cls.fail_popup()
-
-
 
     @classmethod
     def success_popup(cls):
@@ -358,7 +363,6 @@ class Utils():
         for f in init_files:
             if not os.path.isfile(f):
                 cls.touch(f)
-                #Debugging.debug_log(279, 'add init files')
                 SummaryManager.append_item('Adding Init Files')
 
         '''
@@ -366,21 +370,20 @@ class Utils():
         '''
         try:
             install_path = temp_folder
-            if not install_path in sys.path:
-                sys.path.append(install_path)
-            import scripts.PackageManager as tool
-            reload(tool)
+            with add_path(install_path):
+                '''
+                install
+                '''
+                import scripts.Utils.Misc as Misc
+                Misc.Core.install_package(filepaths=[filepath])
 
-            '''
-            install package manager
-            '''
-            tool.Utils.Core.install_package(filepaths=[filepath])
-
-            '''
-            run
-            '''
-            w = tool.Window()
-            w.display()
+                '''
+                load UI
+                '''
+                import scripts.PackageManager as tool
+                reload(tool)
+                w = tool.Window()
+                w.display()
             return True
         except Exception as e:
             SummaryManager.append_item('Install Failed: isFile: {0}, {1}'.format(os.path.isfile(filepath), filepath))
@@ -403,6 +406,7 @@ class Utils():
             try:
                 shutil.rmtree(clean_folder)
             except Exception as e:
+                print(409, Exception, e)
                 pass
 
         '''
@@ -420,3 +424,23 @@ class Utils():
         if not os.path.exists(clean_folder):
             return False
         return clean_folder
+
+
+class add_path(object):
+    '''
+    #https://stackoverflow.com/questions/17211078/how-to-temporarily-modify-sys-path-in-python
+
+    with add_path('/path/to/dir'):
+        mod = __import__('mymodule')
+    '''
+    def __init__(self, path):
+        self.path = path
+
+    def __enter__(self):
+        sys.path.insert(0, self.path)
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        try:
+            sys.path.remove(self.path)
+        except ValueError:
+            pass
