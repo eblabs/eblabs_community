@@ -17,7 +17,7 @@ __credits__ = ["Eric Bates"]
 __maintainer__ = "Eric Bates"
 __email__ = "info@eblabs.com"
 __status__ = "Beta"
-__version__ = '0.1.1'
+__version__ = '0.4.7'
 __version_date__ = '2019-11-25'
 
 import urllib2
