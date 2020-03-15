@@ -24,7 +24,14 @@ Use the Package Manager for quickly installing and updating Tools, get it here:
 # UI Manual
 
 ## Main Areas
+<img src="data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
 
+| Area | Description |
+| --- | --- |
+| **1** | Menu Area |
+| **2** | Retime List |
+| **3** | Objects List |
+| **4** | Tools Area |
 
 # Manual Installation (Advanced User)
 `
