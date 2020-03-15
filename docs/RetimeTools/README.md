@@ -1,3 +1,5 @@
+* note documentation is work in progress *
+
 # Welcome to Retime Tools
 
 A versitile toolset for retiming your animation. 
@@ -10,7 +12,8 @@ Some features include,
 <img src="data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
 
 # How to install?
-Use the Package Manager for quickly installing and updating Tools, get it here:
+Use the Package Manager for quickly installing and updating tools, get it here:
+
 [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
 
 
@@ -26,12 +29,12 @@ Use the Package Manager for quickly installing and updating Tools, get it here:
 ## Main Areas
 <img src="data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
 
-| Area | Description |
-| --- | --- |
-| **1** | Menu Area |
-| **2** | Retime List |
-| **3** | Objects List |
-| **4** | Tools Area |
+| /# | Area | Description | 
+| --- | --- |--- |
+| **1** | Menu Area | Here you can find various menus and options. |
+| **2** | Retime List | Select and modify retime modes from here. |
+| **3** | Objects List | Inspect and modify objects that are connected to the retime. |
+| **4** | Tools Area | Various tools for working with Retimes. |
 
 # Manual Installation (Advanced User)
 `
