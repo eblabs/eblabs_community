@@ -29,7 +29,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 ## Main Areas
 <img src="data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
 
-| /# | Area | Description | 
+| # | Area | Description | 
 | --- | --- |--- |
 | **1** | Menu Area | Here you can find various menus and options. |
 | **2** | Retime List | Select and modify retime modes from here. |
