@@ -37,8 +37,8 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Tools Area | Various tools for working with Retimes. |
 
 # Manual Installation (Advanced User)
-`
-install_path = 'E:/Git/eblabs-hub/'
+
+`install_path = 'E:/Git/eblabs-hub/'
 package_id = 'RetimeTools'
 
 import os
@@ -49,7 +49,6 @@ if not install_path in sys.path:
 import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
 reload(tool)
 w = tool.Window()
-w.display()
-`
+w.display()`
 
 
