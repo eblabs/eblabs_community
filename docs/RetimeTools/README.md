@@ -32,7 +32,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | # | Area | Description | 
 | --- | --- |--- |
 | **1** | Menu Area | Here you can find various menus and options. |
-| **2** | Retime List | Select and modify retime modes from here. |
+| **2** | Retime Controls | Select and modify retime modes from here. |
 | **3** | Objects List | Inspect and modify objects that are connected to the retime. |
 | **4** | Tools Area | Various tools for working with Retimes. |
 
