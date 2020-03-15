@@ -1,4 +1,4 @@
-* note documentation is work in progress *
+*note documentation is work in progress*
 
 # Welcome to Retime Tools
 
