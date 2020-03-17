@@ -36,6 +36,15 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **3** | Objects List | Inspect and modify objects that are connected to the retime. |
 | **4** | Tools Area | Various tools for working with Retimes. |
 
+### Menu Area
+
+### Retime Controls
+
+### Objects List
+
+### Tools Area
+
+
 # Manual Installation (Advanced User)
 
 The Package Manager makes installing a simple process, but if you need to do this manually here's how.
