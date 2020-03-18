@@ -18,7 +18,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 
 # I want to...
-## ...create a new Retime Object
+## ...create a new Retime Control
 ## ...bake out my animation
 ## ...bake out my animation but perserve my keyframes
 ## ...clean up my subframe keys
