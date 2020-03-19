@@ -41,6 +41,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ### Retime Controls
 <img src="data/RetimeTools_RetimeControls_v001.gif" alt="image" />
+
 | # | Area | 
 | --- | --- |
 | File Menu | Menu Area | 
