@@ -19,10 +19,20 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 # I want to...
 ## ...create a new Retime Control
+
+> <img src="data/HowTo_Create.jpg" alt="image" />
+
 ## ...bake out my animation
+
+> <img src="data/HowTo_Bake.jpg" alt="image" />
+
 ## ...bake out my animation but perserve my keyframes
+
+> <img src="data/HowTo_Shuffle.jpg" alt="image" />
+
 ## ...clean up my subframe keys
 
+> <img src="data/HowTo_Clean.jpg" alt="image" />
 
 # UI Manual
 
