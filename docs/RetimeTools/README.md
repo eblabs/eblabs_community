@@ -37,20 +37,45 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Tools Area | Various tools for working with Retimes. |
 
 ### Menu Area
-<img src="data/RetimeTools_FileMenu_v001.gif" alt="image" max-width="100%" />
+<img src="data/RetimeTools_FileMenu.gif" alt="image" />
+
+| Item | Description | 
+| --- | --- |
+| Import/Export | **Coming Soon** Tools for import and exporting the Retime animation as json so it can be shared with other artists and departments.  | 
 
 ### Retime Controls
-<img src="data/RetimeTools_RetimeControls_v001.gif" alt="image" />
+<img src="data/RetimeTools_RetimeControls.gif" alt="image" />
 
-| # | Area | 
+| Item | Description | 
 | --- | --- |
-| File Menu | Menu Area | 
+| Controls | Here you will see a list of Retime Controls in your scene. Click on a control to display its connections in the Object List.  | 
+| Actions Dropdown **Reset** | This resets the Retime Control, removing any changes you have made to the retime curve. |
+| Actions Dropdown **Enable** | This enables the Retime Control. |
+| Actions Dropdown **Disable** | This temporarily disables the Retime Control, while staying connected to all of the objects you've added. |
+| Actions Dropdown **Invert** | This "Inverts" the retime curve. This is helpful if you'd like to Un-Retime animation based on a specific Retime curve. |
+| Actions Dropdown **Disconnect** | This safely removes all objects that are controlled by the Retime Control. |
+| Actions Dropdown **Delete** | This removes the Retime Control from your maya scene. |
+| Select Button | This will select the Retime Control in your maya scene so you can modify the retime animation. |
 
 ### Objects List
-<img src="data/RetimeTools_ObjectsList_v002.gif" alt="image" />
+<img src="data/RetimeTools_ObjectsList.gif" alt="image" />
+
+| Item | Description | 
+| --- | --- |
+| Objects | Clicking on a Retime Control above will update the list of objects. Clicking on anything in this list will also select the objects in your Maya scene.| 
+| Expand | Navigate the tree view to see what objects, channels and animation curves are connected.  | 
+| Add Objects | Select objects in your scene that have animation and click here. This will connect Animation Curves related to your selection to the Retime Control. | 
+| Remove | Removes the selected items from the list, from the Retime Control.  | 
 
 ### Tools Area
-<img src="RetimeTools_ToolsArea_v002.gif" alt="image" />
+<img src="data/RetimeTools_ToolsArea.gif" alt="image" />
+
+| Item | Description | 
+| --- | --- |
+| Create New Retime | This will make a new Retime Control in your scene. Feel free to rename these and have as many as you like.| 
+| Bake Retime | This will bake out the retime for the duration of the Retime Control animation.  | 
+| Shuffle Keys | This will shift around the timing of your existing animation keys based on the Retime Control animation. This is the most animation friendly way to make timing changed to your animation. | 
+| Clean Subframe Keys | Optional for Shuffle Keys, as well as its own button. If you are shuffling keys its very likely individual animation keys become shifted to sub frames. This tool is a way to clean up these keys by removing duplicates and repositioning keys to whole frames while preserving the animation as best as possible. This is a much better option than using Maya's Snap Keys tool.  | 
 
 
 # Manual Installation (Advanced User)
