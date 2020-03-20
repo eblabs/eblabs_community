@@ -37,7 +37,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Tools Area | Various tools for working with Retimes. |
 
 ### Menu Area
-<img src="data/RetimeTools_FileMenu.gif" alt="image" max-width="100%" />
+<img src="data/RetimeTools_FileMenu.gif" alt="image" />
 
 ### Retime Controls
 <img src="data/RetimeTools_RetimeControls.gif" alt="image" />
