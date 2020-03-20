@@ -38,13 +38,22 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ### Menu Area
 <img src="data/RetimeTools_FileMenu.gif" alt="image" />
+| Item | Description | 
+| --- | --- |
+| Import/Export | Coming Soon, tools for import and exporting the Retime animation as json so it can be shared with other artists and departments.  | 
 
 ### Retime Controls
 <img src="data/RetimeTools_RetimeControls.gif" alt="image" />
 
-| # | Area | 
+| Item | Description | 
 | --- | --- |
-| File Menu | Menu Area | 
+| Controls | Here you will see a list of Retime Controls in your scene. Click on a control to display its connections in the Object List.  | 
+| Actions Dropdown **Reset** | This resets the Retime Control, removing any changes you have made to the retime curve. |
+| Actions Dropdown **Enable** | This enables the Retime Control. |
+| Actions Dropdown **Disable** | This temporarily disables the Retime Control, while staying connected to all of the objects you've added. |
+| Actions Dropdown **Invert** | This "Inverts" the retime curve. This is helpful if you'd like to Un-Retime animation based on a specific Retime curve. |
+| Actions Dropdown **Disconnect** | This safely removes all objects that are controlled by the Retime Control. |
+| Actions Dropdown **Delete** | This removes the Retime Control from your maya scene. |
 
 ### Objects List
 <img src="data/RetimeTools_ObjectsList.gif" alt="image" />
