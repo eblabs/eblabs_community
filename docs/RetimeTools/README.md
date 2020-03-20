@@ -48,6 +48,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## Default
 <img src="data/Example_Default.jpg" alt="image" />
+
 * This is the default curve and your animation will appear unchanged. Resetting will go back to this.
 
 ## Speed Ramp
