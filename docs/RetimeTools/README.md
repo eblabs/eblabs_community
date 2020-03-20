@@ -42,7 +42,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 > The retime tool does its best to find related animation based on the objects you are adding. This included Animation Layers and Constraints.
 
 ## ...connect image planes time attribute
-> This works as well but you will need to remove the expression and replace it with animation that drives the frame. We are working on a solution where you wont need to do this eventually.
+> This works as well but you will need to remove the expression on the camera node frame attribute and replace it with keyframe animation that drives the frame. We are working on a solution where you wont need to do this eventually.
 
 # Retime Curve Examples
 
