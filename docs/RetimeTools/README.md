@@ -53,18 +53,22 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## Speed Ramp
 <img src="data/Example_SpeedRamp.jpg" alt="image" />
+
 * In this example the animation begins slightly slower and then gets faster near the end. The start and end frames have stayed the same.
 
 ## Adjustment
 <img src="data/Example_Adjustment.jpg" alt="image" />
+
 * Here we are speeding up a small section in the middle. Since we are keeping the start and end frames the same, the beginning and end will slow down slightly.
 
 ## Loop
 <img src="data/Example_Loop.jpg" alt="image" />
+
 * Its possible to create loops or hard cuts in your retime by doing this.
 
 ## Reverse
 <img src="data/Example_Reverse.jpg" alt="image" />
+
 * Here you can see the curve going in a reverse slow.
 * You can even have your animation play forward and then in reverse all in the same retime animation.
 
