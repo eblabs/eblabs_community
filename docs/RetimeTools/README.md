@@ -38,9 +38,10 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ### Menu Area
 <img src="data/RetimeTools_FileMenu.gif" alt="image" />
+
 | Item | Description | 
 | --- | --- |
-| ImportExport | Coming Soon, tools for import and exporting the Retime animation as json so it can be shared with other artists and departments.  | 
+| Import/Export | Coming Soon, tools for import and exporting the Retime animation as json so it can be shared with other artists and departments.  | 
 
 ### Retime Controls
 <img src="data/RetimeTools_RetimeControls.gif" alt="image" />
