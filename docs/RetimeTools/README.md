@@ -34,6 +34,28 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 > <img src="data/HowTo_Clean.jpg" alt="image" />
 
+## ...connect my objects, but its not working
+
+> The Retime Control connects directly with Animation Curves, not objects, so be sure to make sure you have some animation keyed already.
+
+## ...connect my animation layers, constraints, etc to the retime curve
+> The retime tool does its best to find related animation based on the objects you are adding. This included Animation Layers and Constraints.
+
+## ...connect image planes time attribute
+> This works as well but you will need to remove the expression and replace it with animation that drives the frame. We are working on a solution where you wont need to do this eventually.
+
+# Retime Curve Examples
+
+## Default
+
+## Speed Ramp
+
+## Adjustment
+
+## Loop
+
+## Reverse
+
 # UI Manual
 
 ## Main Areas
