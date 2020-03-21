@@ -1,5 +1,3 @@
-*note documentation is work in progress*
-
 # Welcome to Retime Tools
 
 A versitile toolset for retiming your animation. 
