@@ -24,15 +24,15 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## ...bake out my animation
 
-> <img src="data/HowTo_Bake.jpg" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Bake.jpg" alt="image" />
 
 ## ...bake out my animation but perserve my keyframes
 
-> <img src="data/HowTo_Shuffle.jpg" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Shuffle.jpg" alt="image" />
 
 ## ...clean up my subframe keys
 
-> <img src="data/HowTo_Clean.jpg" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Clean.jpg" alt="image" />
 
 ## ...connect my objects, but its not working
 
@@ -47,27 +47,27 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # Retime Curve Examples
 
 ## Default
-<img src="data/Example_Default.jpg" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Default.jpg" alt="image" />
 
 * This is the default curve and your animation will appear unchanged. Resetting will go back to this.
 
 ## Speed Ramp
-<img src="data/Example_SpeedRamp.jpg" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_SpeedRamp.jpg" alt="image" />
 
 * In this example the animation begins slightly slower and then gets faster near the end. The start and end frames have stayed the same.
 
 ## Adjustment
-<img src="data/Example_Adjustment.jpg" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Adjustment.jpg" alt="image" />
 
 * Here we are speeding up a small section in the middle. Since we are keeping the start and end frames the same, the beginning and end will slow down slightly.
 
 ## Loop
-<img src="data/Example_Loop.jpg" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Loop.jpg" alt="image" />
 
 * Its possible to create loops or hard cuts in your retime by doing this.
 
 ## Reverse
-<img src="data/Example_Reverse.jpg" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Reverse.jpg" alt="image" />
 
 * Here you can see the curve going in a reverse slow.
 * You can even have your animation play forward and then in reverse all in the same retime animation.
@@ -75,7 +75,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # UI Manual
 
 ## Main Areas
-<img src="data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
 
 | # | Area | Description | 
 | --- | --- |--- |
@@ -85,14 +85,14 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Tools Area | Various tools for working with Retimes. |
 
 ### Menu Area
-<img src="data/RetimeTools_FileMenu.gif" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_FileMenu.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
 | Import/Export | **Coming Soon** Tools for import and exporting the Retime animation as json so it can be shared with other artists and departments.  | 
 
 ### Retime Controls
-<img src="data/RetimeTools_RetimeControls.gif" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_RetimeControls.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
@@ -106,7 +106,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | Select Button | This will select the Retime Control in your maya scene so you can modify the retime animation. |
 
 ### Objects List
-<img src="data/RetimeTools_ObjectsList.gif" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_ObjectsList.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
@@ -116,7 +116,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | Remove | Removes the selected items from the list, from the Retime Control.  | 
 
 ### Tools Area
-<img src="data/RetimeTools_ToolsArea.gif" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_ToolsArea.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
