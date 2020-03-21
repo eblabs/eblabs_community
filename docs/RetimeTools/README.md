@@ -20,7 +20,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # I want to...
 ## ...create a new Retime Control
 
-> <img src="data/HowTo_Create.jpg" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Create.jpg" alt="image" />
 
 ## ...bake out my animation
 
