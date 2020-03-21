@@ -14,6 +14,8 @@ Some features include,
 # Archive Documentation for Classic Version
 [Classic Version Docs](https://github.com/eblabs/eblabs_community/raw/master/docs/RetimeTools/data/RetimeTools_ArchiveDocumentation.pdf)
 
+* Classic Version can be loaded from the button right click menu.
+
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
 
