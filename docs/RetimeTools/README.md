@@ -9,7 +9,7 @@ Some features include,
 * Any number of retimes in your scene.
 * Full bake or "Shuffle" your existing keys based on the retime.
 
-<img src="data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
