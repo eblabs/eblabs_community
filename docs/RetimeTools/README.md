@@ -1,6 +1,6 @@
 # Welcome to Retime Tools
 
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/eblabs_retime.png" alt="image" width="100px" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/eblabs_retime.png" alt="image" width="64px" />
 
 A versitile toolset for retiming your animation. 
 
