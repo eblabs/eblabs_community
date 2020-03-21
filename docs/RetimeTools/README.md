@@ -11,6 +11,9 @@ Some features include,
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
 
+# Archive Documentation for Classic Version
+[Classic Version Docs](https://github.com/eblabs/eblabs_community/raw/master/docs/RetimeTools/data/RetimeTools_ArchiveDocumentation.pdf)
+
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
 
