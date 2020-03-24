@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/eblabs_retime.png" alt="image" width="64px" />
 
-**A versitile and intuitive toolset for retiming your animation. **
+**A versitile and intuitive toolset for retiming your animation.**
 
 # Key Features
 * Experiment with timing changes non-destructively.
