@@ -2,12 +2,14 @@
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/eblabs_retime.png" alt="image" width="64px" />
 
-A versitile toolset for retiming your animation. 
+**A versitile and intuitive toolset for retiming your animation. **
 
-Some features include,
+# Key Features
 * Experiment with timing changes non-destructively.
-* Any number of retimes in your scene.
-* Full bake or "Shuffle" your existing keys based on the retime.
+* Easily bake out your retimes, no matter how complex.
+* **Shuffle** your keys! Instead of baking out every key, this feature shifts your existing keys into your the timing.
+* Create any number of retimes in your scene.
+
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
 
