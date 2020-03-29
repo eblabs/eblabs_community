@@ -2,7 +2,7 @@
 
 # Welcome to World Space Tools
 
-(icon)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/eblabs_worldSpaceTools.png" alt="image" width="64px" />
 
 **Advanced animation tools for manipulating animation and switching between local, world space, path space and other parent spaces. Animator friendly, uses only existing key frames that the animator sets. Works for virtually any control type or rig.**
 
