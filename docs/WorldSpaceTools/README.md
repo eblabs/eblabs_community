@@ -1,20 +1,18 @@
-** Docs coming soon
-
 # Welcome to World Space Tools
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/eblabs_worldSpaceTools.png" alt="image" width="64px" />
 
-**Advanced animation tools for manipulating animation and switching between local, world space, path space and other parent spaces. Animator friendly, uses only existing key frames that the animator sets. Works for virtually any control type or rig.**
+**Advanced animation tools for manipulating animation and switching between local, world space, and other parent spaces.**
 
 # Key Features
-* Edit your animation in world/local/other parent spaces.
-* Easily and quickly send animation back to your original object.
+* Manipulate your animation in world, local or any other parent space.
 * Really useful for fixing up foot sliding with cycled animation.
-* Animator friendly, only uses keyframes the animator creates.
-* Can process multiple objects at once.
-* Extremely flexible, can be used on nearly any type of animation control, or rig.
+* Create mini rigs on the fly with existing animation.
+* Animator friendly, can full bake or only use keyframes you the animator created.
+* Effecient, can batch process multiple objects simulataneously. 
+* Super flexible and can be used on nearly any type of animation control or rig.
 
-(Main UI)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image" width="600"/>
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
