@@ -32,13 +32,17 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Quick Undos | Disables the viewport during undo and redo. |
 
 ### Spaces Tools Area
-(screen grab of area)
-
 | UI | Options | 
 | --- | --- |
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI_Options.jpg" alt="image"/>  | 
 
 | Item | Description | 
+| --- | --- |
+| To World Space | <ul><li>Select rig controls and click.</li><li>Temporary controls will be created.</li></ul>  | 
+| To Parent Space | <ul><li>Select rig controls first and select your parent last then click.</li><li>Temporary controls will be created.</li></ul>  | 
+| To Local Space | <ul><li>Select your world space controls and click.</li><li>Animation will be transfered back to your original objects.</li></ul>   | 
+
+| Options | Description | 
 | --- | --- |
 | Function | If you click it, it does this  | 
 
