@@ -12,7 +12,7 @@
 * Effecient, can batch process multiple objects simulataneously. 
 * Super flexible and can be used on nearly any type of animation control or rig.
 
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image" width="600"/>
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image"/>
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
