@@ -44,7 +44,8 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | Options | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| Translates + Rotates | Use these options to select what specific channels are included. |
+| On Keys | Select whether the tool uses your existing key frames, or is baked out for a specific frame range. <br>Highighting a range on the timeline also works to set a time range. |
 
 
 ### Main Area
