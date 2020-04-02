@@ -53,7 +53,9 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | Item | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| Add Child COG | <ul><li>Select your world space controls and click.</li><li>An extra child offset control will be made for the selected world space control.</li></ul> | 
+| Add Parent COG | If you click it, it does this  | 
+| Check Gimbal Flipping | If you click it, it does this  | 
 
 
 ### Copy Tools Area
