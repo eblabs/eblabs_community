@@ -53,9 +53,9 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | Item | Description | 
 | --- | --- |
-| Add Child COG | <ul><li>Select your world space controls and click.</li><li>An extra child offset control will be made for the selected world space control.</li></ul> | 
-| Add Parent COG | If you click it, it does this  | 
-| Check Gimbal Flipping | If you click it, it does this  | 
+| Add Child COG | Select a world space control and click to create an extra child offset control. | 
+| Add Parent COG | Select a world space control and click to create an extra parent offset control.  | 
+| Check Gimbal Flipping | Select any animated control and click here to see an analysys of gimble flipping for the current animation. <br><img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_GimbalScreen.jpg" alt="image"/><br>Look for the lowest % for the least flipping rotate order. | 
 
 
 ### Copy Tools Area
@@ -63,7 +63,10 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | Item | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| On Keys | Toggle between smart baking on keys or full baking for a time range.  | 
+| Maintain Offset | When copying animation you can choose to maintain the current offset. Leaving this will copy animation as is.  | 
+| Copy Anim A to B(s) | <ul><li>Select the objects that you'd like to copy animation FROM first.</li><li>Lastly, select one or more objects that you'd like to copy the animation TO and click.</li></ul> | 
+| Copy Anim (Single Frame) A to B | Click to copy the current position and rotation. | 
 
 
 ### Path Tools Area
@@ -71,7 +74,10 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | Item | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| Create Paths For Selected | Click here to create nurbs curve paths that matches your animation. | 
+| Rebuild Slider | Use this to simplify the nurbs curve. Set the number of CVs with the slider and click to rebuild the curve.  | 
+| Animate Locator | <ul><li>Select the nurbs path followed by the animated control, then click.</li><li>This will create a locator that is attached to the path and animated to closely match the original control. </li></ul>  | 
+| To Path Space | Select your animation controls and then click. <br><ul><li>This will create a path space control that preserves the existing animation although now driven through animation along a nurbs path.</li></ul> | 
 
 
 # Manual Installation (Advanced User)
@@ -82,17 +88,16 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 
 ```python
 install_path = 'E:/path/to/tools/folder/'
-package_id = 'RetimeTools'
+package_id = 'WorldSpaceTools'
 
 import os
 import sys
 if not install_path in sys.path:
     sys.path.append(install_path)
 
-import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
-reload(tool)
-w = tool.Window()
-w.display()
+import eblabs_hub.WorldSpaceTools.scripts.worldspace as tool
+
+tool.window.load()
 ```
 
 
