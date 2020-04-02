@@ -26,7 +26,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | # | Area | Description | 
 | --- | --- |--- |
-| **1** | Menu | Here you can find various menus and options. |
+| **1** | Menu | Menus and options. |
 | **2** | Tabs | From here you can find all of the different modules. |
 | **3** | Tools Area | Tools for each module can be found here.  |
 | **4** | Quick Undos | Disables the viewport during undo and redo. |
@@ -48,24 +48,24 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | On Keys | Select whether the tool uses your existing key frames, or is baked out for a specific frame range. <br>Highighting a range on the timeline also works to set a time range. |
 
 
-### Main Area
-(screen grab of area)
+### Extras Tools Area
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_Extras.jpg" alt="image"/>
 
 | Item | Description | 
 | --- | --- |
 | Function | If you click it, it does this  | 
 
 
-### Main Area
-(screen grab of area)
+### Copy Tools Area
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_Copy.jpg" alt="image"/>
 
 | Item | Description | 
 | --- | --- |
 | Function | If you click it, it does this  | 
 
 
-### Main Area
-(screen grab of area)
+### Path Tools Area
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_Path.jpg" alt="image"/>
 
 | Item | Description | 
 | --- | --- |
