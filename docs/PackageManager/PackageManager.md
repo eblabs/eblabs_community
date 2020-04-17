@@ -8,6 +8,10 @@
 
 # Package Manager
 The package manager is a system for installing and managing all of your eblabs.com animation tools. 
+
+## Required Maya Version
+The Package Manager is currently supporting Maya 2017u5 and newer. Please contact support for integration with older versions of Maya.
+
 ## Getting Started
 
 ### Online Installation
