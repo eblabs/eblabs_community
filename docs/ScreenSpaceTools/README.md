@@ -55,18 +55,17 @@ The Package Manager makes installing a simple process, but if you need to do thi
 Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
 
 ```python
-install_path = 'E:/path/to/tools/folder/'
-package_id = 'RetimeTools'
+install_path = 'C:\Users\eric\Documents\maya\scripts'
+package_id = 'ScreenSpace'
 
 import os
-import sys
-if not install_path in sys.path:
-    sys.path.append(install_path)
+from maya import mel
 
-import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
-reload(tool)
-w = tool.Window()
-w.display()
+
+melCommand = os.path.normpath(os.path.join(install_path, 'eblabs_hub', 'ScreenSpace', 'scripts', 'eblabs_screenSpace.mel'))
+melCommand = melCommand.replace('\\','\\\\')
+mel.eval('source \"{0}\"'.format(melCommand))
+mel.eval('ebLabs_screenSpace;')
 ```
 
 
