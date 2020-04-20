@@ -24,13 +24,11 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## How does it work?
 Here's an example
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/>
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.jpg" alt="image"/>
 
 | Scene | GIF | 
 | --- | --- |
-| test | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> | 
-| test | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.gif" alt="image"/> | 
+| Here is a simple scene where a space ship is flying past a moving camera. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> | 
+| Here you can see how the animation has been reconstructed in a simpler way relative to the camera. Horizontal, Vertical and Depth. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.gif" alt="image"/> | 
 
 
 # UI Manual
