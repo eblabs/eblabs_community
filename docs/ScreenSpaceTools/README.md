@@ -12,7 +12,6 @@
 * Matchmove friendly, have the choice to bake all keys.
 * Can be used in many more creative ways.
 
-
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/screenSpace_mainUI1.jpg" alt="image"/>
 
 # How to install?
@@ -23,8 +22,6 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # Examples and Tips
 
 ## How does it work?
-Here's an example
-
 | Scene | GIF | 
 | --- | --- |
 | Here is a simple scene where a space ship is flying past a moving camera. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> | 
