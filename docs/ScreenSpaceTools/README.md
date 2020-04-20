@@ -1,6 +1,6 @@
 # Welcome to Screen Space Tools
 
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/eblabs_screenSpace.png" alt="image" width="64px" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/eblabs_screenSpace.png" alt="image" width="32px" />
 
 **Advanced animation tools for manipulating animation relative to screen space, including the ability to switch spaces to/from local space and screen space for almost any control.**
 
@@ -23,13 +23,13 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # Examples and Tips
 
 ## How does it work?
-* Here's an example
+Here's an example
 
-| --- | --- |--- |
-| **1** | Menu | Menus and options. |
-| **2** | Tabs | From here you can find all of the different modules. |
-| **3** | Tools Area | Tools for each module can be found here.  |
-| **4** | Quick Undos | Disables the viewport during undo and redo. |
+| # | Area | Description | 
+| **1** | Here is a scene, a spaceship flying by a moving camera.| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Persp.gif" alt="image"/> |
+| **2** | And from the camera's perspective. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> |
+| **3** | Here is a look at how editing works. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.jpg" alt="image"/>  |
+
 
 # UI Manual
 
