@@ -1,32 +1,35 @@
-# Welcome to xxxx
+# Welcome to Screen Space Tools
 
-(icon)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/eblabs_screenSpace.png" alt="image" width="64px" />
 
-**Description.**
+**Advanced animation tools for manipulating animation relative to screen space, including the ability to switch spaces to/from local space and screen space for almost any control.**
 
 # Key Features
-* xxx
-* xxx
-* xxx
+* Quickly edit your animation in screen space.
+* Animation becomes relative to the camera, horizontal, vertical and depth-(distance to camera) curves.
+* Great for animating flying objects, or finding depth bumps in object tracks.
+* Animator friendly, have the choice to use only your existing keyframes.
+* Matchmove friendly, have the choice to bake all keys.
+* Can be used in many more creative ways.
 
-(Main UI)
+
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/screenSpace_mainUI1.jpg" alt="image"/>
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
 
 [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
 
-
-# I want to...
-## ...do something
-
-> Here's how
-
-
 # Examples and Tips
 
-## Do this cool thing
-* Here's how
+## How does it work?
+* Here's an example
+
+| --- | --- |--- |
+| **1** | Menu | Menus and options. |
+| **2** | Tabs | From here you can find all of the different modules. |
+| **3** | Tools Area | Tools for each module can be found here.  |
+| **4** | Quick Undos | Disables the viewport during undo and redo. |
 
 # UI Manual
 
