@@ -24,11 +24,13 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## How does it work?
 Here's an example
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/>
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.jpg" alt="image"/>
 
-| # | Area | Description | 
-| **1** | Here is a scene, a spaceship flying by a moving camera.| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Persp.gif" alt="image"/> |
-| **2** | And from the camera's perspective. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> |
-| **3** | Here is a look at how editing works. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.jpg" alt="image"/>  |
+| Scene | GIF | 
+| --- | --- |
+| test | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> | 
+| test | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.gif" alt="image"/> | 
 
 
 # UI Manual
