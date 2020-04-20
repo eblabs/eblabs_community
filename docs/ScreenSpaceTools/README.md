@@ -55,12 +55,11 @@ The Package Manager makes installing a simple process, but if you need to do thi
 Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
 
 ```python
-install_path = 'C:\Users\eric\Documents\maya\scripts'
+install_path = 'E:/path/to/tools/folder/'
 package_id = 'ScreenSpace'
 
 import os
 from maya import mel
-
 
 melCommand = os.path.normpath(os.path.join(install_path, 'eblabs_hub', 'ScreenSpace', 'scripts', 'eblabs_screenSpace.mel'))
 melCommand = melCommand.replace('\\','\\\\')
