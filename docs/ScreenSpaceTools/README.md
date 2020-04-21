@@ -41,18 +41,24 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Quick Undos | Speed up your Undos and Redos with these buttons. |
 
 ### Create Tools
-(screen grab of area)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_UI_Create.png" alt="image"/>
 
 | Item | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| Cameras In Scene | This list will show all the cameras in the scene. Since screen space is relative to your point of view, you’ll need to pick a camera here to make a screen space rig.  | 
+| + Include Orientation  | By default, Screen Space controls are made only with translations. Check here if you want to modify rotation in screenspace as well.  | 
+| Create Screen Space Rig | Clicking this button will make a screen space rig for all of your selected controls, using the highlighted camera.  | 
 
 ### Bake Tools
-(screen grab of area)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_UI_Bake.png" alt="image"/>
 
 | Item | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| Screen Space Rigs | You can either select the controls in the viewport, or using this list. This is mainly for making it easier to select controls, and to bake more than one control simultaneously.  | 
+| Delete | If you change your mind, you can delete a screen space control by using this button or by deleting the entire rig group from the outliner. Your animation will go back to how it was previously, without any clutter left in your scene. |
+| Smart Bake | This will bake out your animation using only your existing keyframes.|
+| Full Bake | This will bake out every frame. |
+| Refresh Lists	 | Click to update all the lists in the screen space UI. |
 
 
 # Manual Installation (Advanced User)
