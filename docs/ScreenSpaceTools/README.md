@@ -35,10 +35,10 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | # | Area | Description | 
 | --- | --- |--- |
-| **1** | Tabs | Access the Screen Space Tools tab as well as a Help quick start tab. |
-| **2** | Create Tools | This is where you can create a new Screen Space control. |
-| **3** | Bake Tools | From here you can easily bake your animation back to your original controls.  |
-| **4** | Quick Undos | Speed up your Undos and Redos with these buttons. |
+| **A** | Tabs | Access the Screen Space Tools tab as well as a Help quick start tab. |
+| **B** | Create Tools | This is where you can create a new Screen Space control. |
+| **C** | Bake Tools | From here you can easily bake your animation back to your original controls.  |
+| **D** | Quick Undos | Speed up your Undos and Redos with these buttons. |
 
 ### Create Tools
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_UI_Create.png" alt="image"/>
