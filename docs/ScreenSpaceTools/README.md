@@ -19,14 +19,12 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
 
-# Examples and Tips
+# How does it work?
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/>
+* Here is a simple scene where a space ship is flying past a moving camera.
 
-## How does it work?
-| Scene | GIF | 
-| --- | --- |
-| Here is a simple scene where a space ship is flying past a moving camera. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> | 
-| Here you can see how the animation has been reconstructed in a simpler way relative to the camera. Horizontal, Vertical and Depth. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.gif" alt="image"/> | 
-
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.gif" alt="image"/>
+* Here you can see how the animation has been reconstructed in a simpler way relative to the camera. Horizontal, Vertical and Depth.
 
 # UI Manual
 
