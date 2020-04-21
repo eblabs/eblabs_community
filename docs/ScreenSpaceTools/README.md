@@ -1,32 +1,32 @@
-# Welcome to xxxx
+# Welcome to Screen Space Tools
 
-(icon)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/eblabs_screenSpace.png" alt="image" width="32px" />
 
-**Description.**
+**Advanced animation tools for manipulating animation relative to screen space, including the ability to switch spaces to/from local space and screen space for almost any control.**
 
 # Key Features
-* xxx
-* xxx
-* xxx
+* Quickly edit your animation in screen space.
+* Animation becomes relative to the camera, horizontal, vertical and depth-(distance to camera) curves.
+* Great for animating flying objects, or finding depth bumps in object tracks.
+* Animator friendly, have the choice to use only your existing keyframes.
+* Matchmove friendly, have the choice to bake all keys.
+* Can be used in many more creative ways.
 
-(Main UI)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/screenSpace_mainUI1.jpg" alt="image"/>
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
 
 [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
 
-
-# I want to...
-## ...do something
-
-> Here's how
-
-
 # Examples and Tips
 
-## Do this cool thing
-* Here's how
+## How does it work?
+| Scene | GIF | 
+| --- | --- |
+| Here is a simple scene where a space ship is flying past a moving camera. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Camera.gif" alt="image"/> | 
+| Here you can see how the animation has been reconstructed in a simpler way relative to the camera. Horizontal, Vertical and Depth. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Edit2.gif" alt="image"/> | 
+
 
 # UI Manual
 
@@ -56,17 +56,15 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 
 ```python
 install_path = 'E:/path/to/tools/folder/'
-package_id = 'RetimeTools'
+package_id = 'ScreenSpace'
 
 import os
-import sys
-if not install_path in sys.path:
-    sys.path.append(install_path)
+from maya import mel
 
-import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
-reload(tool)
-w = tool.Window()
-w.display()
+melCommand = os.path.normpath(os.path.join(install_path, 'eblabs_hub', 'ScreenSpace', 'scripts', 'eblabs_screenSpace.mel'))
+melCommand = melCommand.replace('\\','\\\\')
+mel.eval('source \"{0}\"'.format(melCommand))
+mel.eval('ebLabs_screenSpace;')
 ```
 
 
