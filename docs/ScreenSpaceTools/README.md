@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/eblabs_screenSpace.png" alt="image" width="32px" />
 
-**Advanced animation tools for manipulating animation relative to screen space, including the ability to switch spaces to/from local space and screen space for almost any control.**
+**Advanced animation tools for manipulating animation relative to screen space, including the ability to switch spaces to/from local space and screen space for any control.**
 
 # Key Features
 * Quickly edit your animation in screen space.
