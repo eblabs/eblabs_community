@@ -50,7 +50,8 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 # Manual Installation (Advanced Users Only)
 
-The Package Manager makes installing a simple process, but if you need to do this manually here's how. [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
+The Package Manager makes installing a simple process, [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
+Although, if you still need to do this manually here's how. 
 
 Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
 
