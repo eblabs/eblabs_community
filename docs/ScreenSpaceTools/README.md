@@ -31,7 +31,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # UI Manual
 
 ## Main Areas
-(breakdown image of main areas)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/ScreenSpaceTools/data/ScreenSpace_Main_Breakdown.png" alt="image"/>
 
 | # | Area | Description | 
 | --- | --- |--- |
