@@ -48,12 +48,23 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | Function | If you click it, it does this  | 
 
 
-# Manual Installation (Advanced User)
+# Manual Installation (Advanced Users Only)
 
 The Package Manager makes installing a simple process, but if you need to do this manually here's how.
 
 Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
 
+## Folder Structure
+```
+.
+├── eblabs_hub
+└── __init__.py
+    └── Package ID
+        ├── __init__.py
+        └── unzip package contents here
+```
+
+## Manual Command
 ```python
 install_path = 'E:/path/to/tools/folder/'
 package_id = 'RetimeTools'
