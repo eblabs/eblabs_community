@@ -35,12 +35,19 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 | # | Area | Description | 
 | --- | --- |--- |
-| **1** | Main Area | Here you can find various menus and options. |
-| **2** | Area 1 | Do this kind of stuff from here. |
-| **3** | Area 2 | Do this kind of stuff from here.  |
-| **4** | Area 3 | Do this kind of stuff from here. |
+| **1** | Tabs | Access the Screen Space Tools tab as well as a Help quick start tab. |
+| **2** | Create Tools | This is where you can create a new Screen Space control. |
+| **3** | Bake Tools | From here you can easily bake your animation back to your original controls.  |
+| **4** | Quick Undos | Speed up your Undos and Redos with these buttons. |
 
-### Main Area
+### Create Tools
+(screen grab of area)
+
+| Item | Description | 
+| --- | --- |
+| Function | If you click it, it does this  | 
+
+### Bake Tools
 (screen grab of area)
 
 | Item | Description | 
