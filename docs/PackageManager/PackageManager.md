@@ -1,5 +1,7 @@
 # Package Manager
 The package manager is a system for installing and managing all of your eblabs.com animation tools. 
+
+
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_UI.png" alt="image" width="50%"/>
 
 # Getting Started
