@@ -44,3 +44,15 @@ The Package Manager can be found on the eblabs shelf.<br/>
 1. From the main UI, click "Add Package" to locate the zip package that you've downloaded from your eblabs.com MyAccount page. <br/>
     - ![](https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_addPackage.gif)
     - [https://eblabs.com/my-account/downloads/](https://eblabs.com/my-account/downloads/)    
+
+
+## Troubleshooting
+
+### Pre-Maya 2017u5 Installation
+We are working to improve the install process for older versions of Maya. Here is a work around to help when the drag and drop installer isnt recognized.
+
+| Steps | Info  |
+| --- | --- |
+|Copy the contents of the installer into a Python tab of the script editor.|[eblabs_drag_drop_install.py](https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/eblabs_drag_drop_install.py)|
+| ```onMayaDroppedPythonFile()``` <br/> Add one additional line at the end. Make sure there aren't any tabs or spaces in front of this. | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/data/Troubleshooting_pre2017Fix.jpg" alt="image"/> |
+|Click Run|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/data/Troubleshooting_pre2017Fix_RunSmall.jpg" alt="image"/>|
