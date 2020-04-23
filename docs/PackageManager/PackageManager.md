@@ -17,8 +17,8 @@ The package manager is a system for installing and managing all of your eblabs.c
 |Steps||
 |---|---|
 |3. In the case of Offline Installs, you will see a slightly different popup. |<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_offline.png" alt="image"/>|
-|4. Fear not, the actual instalation files can be downloaded manually. Save the latest package to your computer.|[Get Latest Package Manager Version Here](https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.5.6_compiled.zip)|
-|5. From the popup click "Install" and select the latest package that you saved to your local computer in step #4.|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/data/PackageManager_Docs_InstallButton.jpg" alt="image"/>|
+|4. Fear not, the actual instalation files can be downloaded manually. Save the latest package to your computer from here.|[Get Latest Package Manager Version Here](https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.5.6_compiled.zip)|
+|5. From the popup click "Install" and locate the package that you just downloaded.|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/data/PackageManager_Docs_InstallButton.jpg" alt="image"/>|
 |6. A few more steps and High Five! | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_success.png" alt="image"/> |
 
 # Package Manager Quick Start
