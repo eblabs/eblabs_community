@@ -38,7 +38,7 @@ Once you have the Package Manager up and running, installing and updating new to
 # Troubleshooting
 
 ## Pre-Maya 2017u5 Installation
-We are working to improve the install process for older versions of Maya. Here is a work around to help when the drag and drop installer isnt recognized.
+We are working to improve the install process for older versions of Maya. Here is a work around to help when the drag and drop installer isn't recognized.
 
 | Steps | |
 | --- | --- |
