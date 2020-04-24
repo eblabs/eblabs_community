@@ -9,17 +9,17 @@ The package manager is a system for installing and managing all of your eblabs.c
 ## Online Installation
 |Steps||
 |---|---|
-|1. Download the drag/drop installer.|[eblabs_drag_drop_install.py](https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/eblabs_drag_drop_install.py)<br/><br/>Be sure to right click and "Save Link As".|
+|1. Download the drag/drop installer.|[eblabs_drag_drop_install.py](https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/eblabs_drag_drop_install.py)<br/><br/>Be sure to right click and "Save Link/Target As".|
 |2. Simply drag and drop the installer into Maya|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer.gif" alt="image"/>|
 |3. High five! | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_success.png" alt="image"/> |
 
 ## Offline Installation
 |Steps||
 |---|---|
-|3. In the case of Offline Installs, you will see a slightly different popup. |<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_offline.png" alt="image"/>|
-|4. Fear not, the actual instalation files can be downloaded manually. Save the latest package to your computer from here.|[Get Latest Package Manager Version Here](https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.5.6_compiled.zip)|
+|3. If an Online Install isn't possible, you will see a slightly different popup. |<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_offline.png" alt="image"/>|
+|4. Fear not, the actual installation files can be downloaded manually. Save the latest package to your computer from here.|[Get Latest Package Manager Version Here](https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.5.6_compiled.zip)<br/><br/>Be sure to right click and "Save Link/Target As".|
 |5. From the popup click "Install" and locate the package that you just downloaded.|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/data/PackageManager_Docs_InstallButton.jpg" alt="image"/>|
-|6. A few more steps and High Five! | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_success.png" alt="image"/> |
+|6. After these additional steps, High Five! | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_installer_success.png" alt="image"/> |
 
 # Package Manager Quick Start
 
