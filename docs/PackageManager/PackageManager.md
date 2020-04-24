@@ -32,7 +32,7 @@ The Package Manager can be found on the eblabs shelf.<br/>
 Once you have the Package Manager up and running, installing and updating new tools is quick and easy.
 |Steps||
 |---|---|
-|1. Be sure to download the packages for tools you've purchased from your account downloads.|[https://eblabs.com/my-account/downloads/](https://eblabs.com/my-account/downloads/) |
+|1. Be sure to download the packages for tools you've purchased from your account.|[https://eblabs.com/my-account/downloads/](https://eblabs.com/my-account/downloads/) |
 |2. Click on "Add Package" and locate the package you'd like to install.|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/PackageManager/eblabsPackageManager_addPackage.gif" alt="image"/> |
 
 # Troubleshooting
