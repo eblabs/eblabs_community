@@ -84,10 +84,34 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 The Package Manager makes installing a simple process, but if you need to do this manually here's how.
 
-Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
+A great place to install these tools is in the maya/script folder, please see the folder structure below to setup your tools in the simplest way. Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
 
+## Folder Structure
+```
+.
+├── eblabs_hub
+└── __init__.py
+    └── package_id
+        ├── __init__.py
+        └── unzip package contents here
+```
+
+## Reminder on Install Path
+Make sure to reference the parent folder of your /eblabs_hub folder.
+
+Bad: 
 ```python
-install_path = 'E:/path/to/tools/folder/'
+install_path = 'E:/path/to/maya/scripts/eblabs_hub'
+```
+
+Good: 
+```python
+install_path = 'E:/path/to/maya/scripts/'
+```
+
+## Launch Command
+```python
+install_path = 'E:/path/to/maya/scripts/'
 package_id = 'WorldSpaceTools'
 
 import os
