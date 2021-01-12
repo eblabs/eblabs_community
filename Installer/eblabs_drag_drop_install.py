@@ -135,7 +135,7 @@ class Installer():
 
                 json_info_url = 'https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/installer_info.json'
                 info = Utils.read_json_from_url(json_info_url)
-                # 'https://github.com/eblabs/eblabs_community/raw/master/Installer/eblabs_PackageManager_0.0.zip'
+                # 'https://github.com/eblabs/eblabs_community/raw/master/Installer/eblabs_PackageManager_0.0.eblabs'
 
                 package_url = info['installer_url']
                 temp_filepath = Utils.download_file(url=package_url)
@@ -224,6 +224,7 @@ https://github.com/eblabs/eblabs_community/blob/master/Installer/versions/
             cls.success_popup()
         else:
             cls.fail_popup()
+
 
 class Utils():
 
@@ -351,6 +352,7 @@ class Utils():
             SummaryManager.append_item('Unzip: Success: {0}, {1}'.format(temp_folder, filepath))
         except Exception as e:
             SummaryManager.append_item('Unzip: Fail: {0}, {1}, {2}, {3}'.format(Exception, e, temp_folder, filepath))
+
         '''
         add init files
         '''
