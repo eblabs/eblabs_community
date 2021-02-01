@@ -17,8 +17,8 @@ __credits__ = ["Eric Bates"]
 __maintainer__ = "Eric Bates"
 __email__ = "info@eblabs.com"
 __status__ = "Beta"
-__version__ = '0.5.1'
-__version_date__ = '2019-11-25'
+__version__ = '0.6.3'
+__version_date__ = '2021-02-01'
 
 import urllib2
 import urllib
@@ -292,7 +292,8 @@ class Utils():
     @classmethod
     def ask_user_for_package_file(cls):
         # get path
-        filters = 'eblabs_PackageManager_*.zip (eblabs_PackageManager_*.zip)'
+        #filters = 'eblabs_PackageManager_*.zip (eblabs_PackageManager_*.zip)'
+        filters = "eblabs_PackageManager_ (eblabs_PackageManager_*.zip eblabs_PackageManager_*.eblabs)"
         path = cmds.fileDialog2(fileFilter=filters, dialogStyle=2, fileMode=1, okCaption='OK')
         if path:
             return str(path[0])
@@ -370,10 +371,14 @@ class Utils():
         try:
             install_path = temp_folder
             with add_path(install_path):
-                '''
-                install
-                '''
+                #install
                 import scripts.Utils.Misc as Misc
+
+                # reset user path
+                path = Misc.Core.get_default_user_path()
+                Misc.Core.set_user_path(path)
+
+                # install
                 Misc.Core.install_package(filepaths=[filepath])
 
                 '''
