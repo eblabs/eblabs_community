@@ -10,7 +10,7 @@ A simple yet versitile tool for mirroring poses and selections.
 * Mirror Poses along local axis or an arbitrary mirror plane
 * Mirror Selections as well
 
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Main.jpg" alt="image"   />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Main.jpg" alt="image" width="300" />
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
