@@ -49,7 +49,9 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # Examples and Tips
 
 ## How to troubleshoot registration problems
-* Here's how
+* For the most part you can just make your selection and click "Register".
+* If you do run into problems, you can go through the steps manually in the "Character Setup" tab.
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/HowTo_RegisterCharacterManually.gif" alt="image" width="600" />  
 
 # UI Manual
 
