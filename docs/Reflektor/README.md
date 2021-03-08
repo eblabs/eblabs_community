@@ -21,9 +21,9 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # I want to...
 ## ...start using the tool with my character
 
-> Select all your controls (don't forget hidden IK or FK controls, etc)
-> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Register.png" alt="image" width="300" />
-> Click the "Register" button (check below if you run into any issues)
+> Select all your controls (don't forget hidden IK or FK controls, etc)  
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Register.png" alt="image" width="300" />  
+> Click the "Register" button (check below if you run into any issues)  
 
 ## ...mirror my selection
 
