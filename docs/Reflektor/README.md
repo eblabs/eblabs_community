@@ -56,7 +56,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # UI Manual
 
 ## Main Areas
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Overview.gif" alt="image" width="600" />  
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Overview.gif" alt="image" width="300" />  
 
 | # | Area | Description | 
 | --- | --- |--- |
