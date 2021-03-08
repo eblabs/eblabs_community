@@ -28,6 +28,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## ...mirror my selection
 
+>   
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Mirror.png" alt="image" width="300" />  
 > Select your controls and click "Mirror"  
 > Your pose will be mirror to the other side.  
@@ -35,12 +36,14 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## ...select both sides
 
+>   
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Select.png" alt="image" width="300" />  
 > Click "Select" to select the opposite side.  
 > To add the opposite side to your selection, use SHIFT + Click on the button.  
 
 ## ...mirror pose using an arbitrary mirror plane
 
+>   
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_SetMirrorPlane.png" alt="image" width="300" />  
 > First select the object that you would like to use as a mirror plane and click "Set Mirror Plane Reference". (currently mirroring will be done over the X axis)  
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_MirrorViaMirrorPlane.png" alt="image" width="300" />  
