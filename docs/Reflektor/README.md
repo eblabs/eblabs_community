@@ -29,7 +29,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 ## ...mirror my selection
 
 >   
-> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Mirror.png" alt="image" width="300" <div style="clear:both;"></div>
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Mirror.png" alt="image" width="300"> <div style="clear:both;"></div>
 > Select your controls and click "Mirror"  
 > Your pose will be mirror to the other side.  
 > To mirror swap both sides, make sure to select both sides before clicking (check next tip).  
