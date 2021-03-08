@@ -21,19 +21,29 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # I want to...
 ## ...start using the tool with my character
 
-> Here's how
+> Select all your controls (don't forget hidden IK or FK controls, etc)
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Register.png" alt="image" width="300" />
+> Click the "Register" button (check below if you run into any issues)
 
 ## ...mirror my selection
 
-> Here's how
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Mirror.png" alt="image" width="300" />
+> Select your controls and click "Mirror"
+> Your pose will be mirror to the other side.
+> To mirror swap both sides, make sure to select both sides before clicking (check next tip).
 
 ## ...select both sides
 
-> Here's how
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Select.png" alt="image" width="300" />
+> Click "Select" to select the opposite side.
+> To add the opposite side to your selection, use SHIFT + Click on the button.
 
 ## ...mirror pose using an arbitrary mirror plane
 
-> Here's how
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_SetMirrorPlane.png" alt="image" width="300" />
+> First select the object that you would like to use as a mirror plane and click "Set Mirror Plane Reference". (currently mirroring will be done over the X axis)
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_MirrorViaMirrorPlane.png" alt="image" width="300" />
+> Next simply click "Mirror Via Reference Plane". (It's not reccomended to use this for ALL controls at once, its best used on as few controls as possible.)
 
 # Examples and Tips
 
