@@ -28,7 +28,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## ...mirror my selection
 
-> Select your controls and click "Mirror"
+> Select your controls and click "Mirror"  
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Mirror.png" alt="image" width="300">  
 > Your pose will be mirrored to the other side.  
 > To "mirror swap" both sides, make sure to select both sides before clicking (check next tip).  
