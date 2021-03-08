@@ -56,21 +56,43 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # UI Manual
 
 ## Main Areas
-(breakdown image of main areas)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Overview.gif" alt="image" width="600" />  
 
 | # | Area | Description | 
 | --- | --- |--- |
-| **1** | Main Area | Here you can find various menus and options. |
-| **2** | Area 1 | Do this kind of stuff from here. |
-| **3** | Area 2 | Do this kind of stuff from here.  |
-| **4** | Area 3 | Do this kind of stuff from here. |
+| **1** | Tools Menu | Here you can find additional tools and info. |
+| **2** | Main Tab | All of the main tools. |
+| **3** | Character Setup | You can registere a new charater here.  |
+| **4** | Edit Controls | For modifying the mirroring data if needed. |
 
-### Main Area
-(screen grab of area)
+### Tools
+| Item | Description | 
+| --- | --- |
+| Manually Register Left Right Pair | If your rig has some naming inconsistencies, you can use this to force register a Left/Right pair. Just select a left and right control, and click this to register a pair even if their naming isn't correct.  | 
+
+### Main
+| Item | Description | 
+| --- | --- |
+| Mirror | Click here to mirror your selected controls to the other side. FYI, selecting both left and right before clicking this will "mirror swap" both sides. | 
+| Select | Click to select the other side. Shift + Click to add the other side to your selection. | 
+| Set Mirror Plane Reference | It's also possible to mirror your pose based on a mirror plane that you can define. Select your object and click to register this Mirror Plane. Keep in mind that the X axis will be used for mirroring. | 
+| Mirror via Reference Plane | With your controls selected, click here to mirror your pose using the Mirror Plane that you created. | 
+
+### Setup Character
+| Item | Description | 
+| --- | --- |
+| Add Controls | Add controls to the list of objects to be registered. | 
+| Clear | Resets the list of objects to be registered. | 
+| Character ID | This will show you what the data will be saved as. | 
+| Keywords | The tool will attempt to find out the best Left and Right keywords. You can click on these to change the keywords if you like. <br />Using an "^" at the start tells the tool that the keyword is at the start of the name. "$" can be used to tell the tool that the name ends with the keyword. <br/>For example "^L_" means that the name starts with "L_". | 
+| Mirror Axis | Currently only local X mirroring is supported. | 
+| Control List | Here you can check to see if the pairing went correctly. You can see by the "C" Center, "L" Left and "R" Right, that the controls are grouped properly. | 
+
+### Edit Controls
 
 | Item | Description | 
 | --- | --- |
-| Function | If you click it, it does this  | 
+| Editor | Coming soon, from here you will be able to modify the mirroring data and make any adjustments. | 
 
 
 # Manual Installation (Advanced Users Only)
@@ -93,16 +115,16 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 ## Manual Command
 ```python
 install_path = 'E:/path/to/tools/folder/'
-package_id = 'RetimeTools'
+package_id = 'Reflektor'
 
 import os
 import sys
 if not install_path in sys.path:
     sys.path.append(install_path)
 
-import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
+import eblabs_hub.Reflektor.scripts.MainModule as tool
 reload(tool)
-w = tool.Window()
-w.display()
+
+tool.MainWindow.launch()
 ```
 
