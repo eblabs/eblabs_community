@@ -3,7 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/eblabs_reflektor.png" alt="image" width="64px" />
 
-A simple yet versitile tool for mirroring poses and selections.
+A simple yet versitile tool for mirroring poses and selections.  
 [![Alt text](https://img.youtube.com/vi/XEzIoF_2C6k/0.jpg)](https://www.youtube.com/watch?v=XEzIoF_2C6k)
 
 
