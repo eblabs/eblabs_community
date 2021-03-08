@@ -1,16 +1,16 @@
 
-# Welcome to Reflektor
+# Welcome to Reflektor Beta
 
-(icon)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/eblabs_reflektor.png" alt="image" width="64px" />
 
-**Description.**
+A simple yet versitile tool for mirroring poses and selections.
 
 # Key Features
-* xxx
-* xxx
-* xxx
+* Auto registration your character
+* Mirror Poses along local axis or an arbitrary mirror plane
+* Mirror Selections as well
 
-(Main UI)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/Reflektor/data/UI_Main.jpg" alt="image" width="300" />
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
@@ -19,14 +19,25 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 
 # I want to...
-## ...do something
+## ...start using the tool with my character
 
 > Here's how
 
+## ...mirror my selection
+
+> Here's how
+
+## ...select both sides
+
+> Here's how
+
+## ...mirror pose using an arbitrary mirror plane
+
+> Here's how
 
 # Examples and Tips
 
-## Do this cool thing
+## How to troubleshoot registration problems
 * Here's how
 
 # UI Manual
