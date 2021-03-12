@@ -448,3 +448,10 @@ class add_path(object):
             sys.path.remove(self.path)
         except ValueError:
             pass
+
+# For Maya 2016 and earlier
+# Copy/Paste this entire script
+# into the script editor.
+# Remove "#" from the next line and run.
+
+#onMayaDroppedPythonFile()
