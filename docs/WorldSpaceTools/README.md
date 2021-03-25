@@ -9,7 +9,7 @@
 * Really useful for fixing up foot sliding with cycled animation.
 * Create mini rigs on the fly with existing animation.
 * Animator friendly, can full bake or only use keyframes you the animator created.
-* Effecient, can batch process multiple objects simulataneously. 
+* Efficient, can batch process multiple objects simultaneously. 
 * Super flexible and can be used on nearly any type of animation control or rig.
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image"/>
