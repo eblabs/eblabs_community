@@ -20,8 +20,8 @@ __status__ = "Beta"
 __version__ = '0.6.3'
 __version_date__ = '2021-02-01'
 
-import urllib2
-import urllib
+#import urllib2
+#import urllib
 import tempfile
 import os
 import sys
@@ -277,7 +277,15 @@ class Utils():
         download
         '''
         try:
-            urllib.urlretrieve(url, filename=temp_file)
+            try:
+                # python 2.7
+                import urllib
+                urllib.urlretrieve(url, filename=temp_file)
+            except:
+                # python 3.7
+                import urllib.request
+                urllib.request.urlretrieve(url, filename=temp_file)
+
             if os.path.exists(temp_file):
                 SummaryManager.append_item('Download Package: Success')
                 #Debugging.debug_log(205, 'file download success')
@@ -304,9 +312,18 @@ class Utils():
     def read_json_from_url(cls, url=''):
         #https://stackoverflow.com/questions/1393324/in-python-given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-cont
         try:
-            url_string = urllib.urlopen(url).read()
-            data = json.loads(url_string)
-            return data
+            try:
+                # python 2.7
+                import urllib
+                url_string = urllib.urlopen(url).read()
+                data = json.loads(url_string)
+                return data
+            except:
+                # python 3.7
+                import urllib.request
+                url_string = urllib.request.urlopen(url).read()
+                data = json.loads(url_string)
+                return data
         except:
             return False
 
@@ -385,7 +402,7 @@ class Utils():
                 load UI
                 '''
                 import scripts.PackageManager as tool
-                reload(tool)
+                #reload(tool)
                 w = tool.Window()
                 w.display()
             return True
@@ -449,7 +466,7 @@ class add_path(object):
         except ValueError:
             pass
 
-# For Maya 2016 and earlier
+# For Maya 2017u5 and earlier
 # Copy/Paste this entire script
 # into the script editor.
 # Remove "#" from the next line and run.

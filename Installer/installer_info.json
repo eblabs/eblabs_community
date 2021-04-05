@@ -1,12 +1,12 @@
 {
-    "installer_url": "https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.6.3_c.eblabs", 
+    "installer_url": "https://github.com/eblabs/eblabs_community/raw/master/Installer/versions/eblabs_PackageManager_0.6.4.h.eblabs", 
     "versions": {
         "CodePuncher": "1.0.2019.09.10", 
         "GroupMoveTool": "1.0.2019.09.10", 
         "HelpModule": "0.0", 
         "Hub": "0.0", 
         "MotionTrails": "1.0.2019.09.10", 
-        "PackageManager": "0.6.2", 
+        "PackageManager": "0.6.4", 
         "ParentSpaceSwitcher": "0.0", 
         "RetimeTools": "0.2.0", 
         "ScreenSpace": "1.0.2019.09.10", 
