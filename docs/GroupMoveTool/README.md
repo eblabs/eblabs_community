@@ -6,7 +6,7 @@
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Basics.gif" alt="image" width="400px" />
 
 # Key Features
-> * Translate and rotate your selected objects.
+> * Translate and rotate your selected objects together as a group.
 > * Works with complex heirarchies. 
 > * Relocate pivots on the fly.
 
