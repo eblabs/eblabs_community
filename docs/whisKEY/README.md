@@ -23,7 +23,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 The whisKEY toolset is designed to work around you, pick and choose the widgets you like.
 
 Check the right click menu to add, remove or reorder your widgets.
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.jpg" alt="image" />
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.png" alt="image" />
 
 | # | Widget | Description | 
 | --- | --- |--- |
@@ -37,10 +37,10 @@ Check the right click menu to add, remove or reorder your widgets.
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Principles.jpg" alt="image" /> | Animation Principles | Brush up on the basics here. |
 
 ## Here are some ways you can customize
-| | | |
-|-|-|-|
-|__Bold Key__| Value1 |
-| Normal Key | Value2 |
+| | | | |
+|-|-|-|-|
+|__Bold Key__| Value1 | s| |
+| Normal Key | Value2 | | |
 
 
 # Examples and Tips
