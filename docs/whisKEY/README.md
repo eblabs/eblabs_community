@@ -10,7 +10,7 @@
 * Many widgets to choose from.
 * Lots of workflow and cleanup tools.
 
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/WhisKEYPro.jpg" alt="image" />
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/WhisKEYPro.jpg" alt="image" />
 
 
 # How to install?
@@ -22,7 +22,8 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # Customize your widgets
 The whisKEY toolset is designed to work around you, pick and choose the widgets you like. Check the right click menu to add, remove or reorder your widgets.
 
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.png" alt="image" />
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.png" alt="image" />
+
 
 | # | Widget | Description | 
 | --- | --- |--- |
