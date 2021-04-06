@@ -19,7 +19,21 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
 
 
-# I want to...
+# Customize your widgets
+The whisKEY toolset is designed to work around you. You can pick and choose your own widgets.
+
+Here are the main widgets
+| # | Widget | Description | 
+| --- | --- |--- |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Classic.jpg" alt="image" /> | Classic | A collection of basic animation tools. |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Inbetween.jpg" alt="image" /> | Inbetween | Basic inbetweening tools. |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_WorldSpace.jpg" alt="image" /> | World Space | An inbetween tool to blend previous and next world space positions.  |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Extras.jpg" alt="image" /> | Extras | Multiply, PosePusher and In/Out tool. |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_SnapShot.jpg" alt="image" /> | Snapshot | For capturing a pose and applying it at another time or another set of similarly named controls. |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Tools.jpg" alt="image" /> | Tools | Misc tools for rekeying, cleaning subframe keys or boring keys and baking. |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Options.jpg" alt="image" /> | Options | For setting the tangent types for your selection. Also sets the default type for new keys. |
+| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Principles.jpg" alt="image" /> | Animation Principles | Brush up on the basics here. |
+
 ## ...do something
 
 > Here's how
