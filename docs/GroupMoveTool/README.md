@@ -1,15 +1,14 @@
-# Welcome to xxxx
+# Welcome to Group Move Tool
 
-(icon)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/eblabs_groupMoveTool.png" alt="image" width="64px" />
 
-**Description.**
+**Easily transform many objects at once, as a group.**
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/eblabs_groupMoveToolCompare.gif" alt="image" width="600"/>
 
 # Key Features
-* xxx
-* xxx
-* xxx
-
-(Main UI)
+> * Translate and rotate your selected objects.
+> * Works with complex heirarchies. 
+> * Relocate pivots on the fly.
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
@@ -17,36 +16,21 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 [Package Manager Getting Started](https://eblabs.com/package-manager-quick-install-beta/)
 
 
-# I want to...
-## ...do something
-
-> Here's how
-
-
-# Examples and Tips
-
-## Do this cool thing
-* Here's how
-
-# UI Manual
-
-## Main Areas
-(breakdown image of main areas)
-
+# Quick Start Guide
 | # | Area | Description | 
 | --- | --- |--- |
-| **1** | Main Area | Here you can find various menus and options. |
-| **2** | Area 1 | Do this kind of stuff from here. |
-| **3** | Area 2 | Do this kind of stuff from here.  |
-| **4** | Area 3 | Do this kind of stuff from here. |
+| **1** | Select | Select all the controls or objects you'd like to manipulate. |
+| **2** | Click | Activate the **Group Move Tool** by clicking on the button. |
+| **3** | Move/Rotate/Scale | Move your objects, when you release the objects will update their positions.  |
+| **4** | Finish | Deselect the Group Move node to exit the tool. |
 
-### Main Area
-(screen grab of area)
+# Tips and Tricks
 
-| Item | Description | 
-| --- | --- |
-| Function | If you click it, it does this  | 
+## Change the Pivots
+* Hit the *Insert* key when the tool is active to move the pivot point.
 
+## Try scale!
+* Using scale will move objects closer or farther apart. 
 
 # Manual Installation (Advanced Users Only)
 
@@ -68,16 +52,15 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 ## Manual Command
 ```python
 install_path = 'E:/path/to/maya/scripts'
-package_id = 'Whiskey'
+package_id = 'GroupMoveTool'
 
 import os
 import sys
 if not install_path in sys.path:
     sys.path.insert(0, install_path)
 
-import eblabs_hub.Whiskey.scripts.WhiskeyPro as tool
-
-tool.window.load()
+import eblabs_hub.GroupMoveTool.scripts.GroupMoveTool as tool
+tool.GroupMove()
 ```
 
 
