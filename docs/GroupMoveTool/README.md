@@ -1,4 +1,4 @@
-# Welcome to xxxx
+# Welcome to Group Move Tool
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/eblabs_groupMoveTool.png" alt="image" width="64px" />
 
