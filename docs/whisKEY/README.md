@@ -1,15 +1,17 @@
-# Welcome to xxxx
+# Welcome to whisKEY Pro
 
-(icon)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/whiskey_icon.png" alt="image" width="64px" />
 
-**Description.**
+**The WhisKEY Pro Toolkit is an Animator’s swiss army knife of animation tools.**
 
 # Key Features
-* xxx
-* xxx
-* xxx
+* Realtime in-between sliders.
+* Fully customizable UI.
+* Many widgets to choose from.
+* Lots of workflow and cleanup tools.
 
-(Main UI)
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/WhisKEYPro.jpg" alt="image" />
+
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
@@ -67,7 +69,7 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 
 ## Manual Command
 ```python
-install_path = 'E:/path/to/tools/folder/'
+install_path = 'E:/path/to/maya/scripts'
 package_id = 'RetimeTools'
 
 import os
