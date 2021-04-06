@@ -44,28 +44,28 @@ The whisKEY toolset is designed to work around you, pick and choose the widgets 
 # Tips and Tricks
 
 ## How to - Inbetween Widget
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/inbetween.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/inbetween.gif" alt="image" />
 
 ## How to - Multiply Widget
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/multiply.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/multiply.gif" alt="image" />
 
 ## How to - Capture Pose Widget
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/capturePose.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/capturePose.gif" alt="image" />
 
 ## How to - World Space Widget
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/worldSpace2.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/worldSpace2.gif" alt="image" />
 
 ## How to - In/Out Widget
-* You can adjust or reset the sensitivity of this widget through the right click menu or by ctrl+sliding.
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/inOut.gif" alt="image" />
+> * You can adjust or reset the sensitivity of this widget through the right click menu or by ctrl+sliding.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/inOut.gif" alt="image" />
 
 ## Expand and collapse
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/expandCollapse_v001.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/expandCollapse_v001.gif" alt="image" />
 
 ## Pin and Rename
-* Click the text to rename the widget.
-* The pin button will store the selection, so the widget will work with those objects regardless of what's selected
-* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/PinAndRename.gif" alt="image" />
+> * Click the text to rename the widget.
+> * The pin button will store the selection, so the widget will work with those objects regardless of what's selected
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/PinAndRename.gif" alt="image" />
 
 # Manual Installation (Advanced Users Only)
 
