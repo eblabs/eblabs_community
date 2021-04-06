@@ -17,7 +17,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 
 # Quick Start Guide
-| # | Area | Description | 
+| # | Step | More Info | 
 | --- | --- |--- |
 | **1** | Select | Select all the controls or objects you'd like to manipulate. |
 | **2** | Click | Activate the **Group Move Tool** by clicking on the button. |
