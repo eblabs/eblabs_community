@@ -23,6 +23,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 The whisKEY toolset is designed to work around you, pick and choose the widgets you like.
 
 Check the right click menu to add, remove or reorder your widgets.
+
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.png" alt="image" />
 
 | # | Widget | Description | 
