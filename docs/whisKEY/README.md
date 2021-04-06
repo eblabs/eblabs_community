@@ -5,11 +5,10 @@
 **The WhisKEY Pro Toolkit is an Animator’s swiss army knife of animation tools.**
 
 # Key Features
-* Realtime in-between sliders.
-* Fully customizable UI.
-* Many widgets to choose from.
-* Lots of workflow and cleanup tools.
-
+> * Realtime in-between sliders.
+> * Fully customizable UI.
+> * Many widgets to choose from.
+> * Lots of workflow and cleanup tools.
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/WhisKEYPro.jpg" alt="image" />
 
 
