@@ -68,17 +68,16 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 ## Manual Command
 ```python
 install_path = 'E:/path/to/maya/scripts'
-package_id = 'RetimeTools'
+package_id = 'Whiskey'
 
 import os
 import sys
 if not install_path in sys.path:
-    sys.path.append(install_path)
+    sys.path.insert(0, install_path)
 
-import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
-reload(tool)
-w = tool.Window()
-w.display()
+import eblabs_hub.Whiskey.scripts.WhiskeyPro as tool
+
+tool.window.load()
 ```
 
 
