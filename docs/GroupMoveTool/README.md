@@ -36,7 +36,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## Falloff
 > * Adjust the falloff from the channel box.
-> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Scale.gif" alt="image" width="400px" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Falloff.gif" alt="image" width="400px" />
 
 
 # Manual Installation (Advanced Users Only)
