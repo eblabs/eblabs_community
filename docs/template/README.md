@@ -67,7 +67,7 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 
 ## Manual Command
 ```python
-install_path = 'E:/path/to/tools/folder/'
+install_path = 'E:/path/to/maya/scripts'
 package_id = 'RetimeTools'
 
 import os
