@@ -33,7 +33,6 @@ The whisKEY toolset is designed to work around you, pick and choose the widgets 
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_SnapShot.jpg" alt="image" /> | Snapshot | For capturing a pose and applying it at another time or another set of similarly named controls. |
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Tools.jpg" alt="image" /> | Tools | Misc tools for rekeying, cleaning subframe keys or boring keys and baking. |
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Options.jpg" alt="image" /> | Options | For setting the tangent types for your selection. Also sets the default type for new keys. |
-| <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Principles.jpg" alt="image" /> | Animation Principles | Brush up on the basics here. |
 
 ## Here are some ways you can customize
 | | | | |
@@ -41,31 +40,31 @@ The whisKEY toolset is designed to work around you, pick and choose the widgets 
 |<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_A.png" alt="image" width="200"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_B.png" alt="image" width="200"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_C.png" alt="image" width="200"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_D.png" alt="image" width="200"/> |
 
 
+# Tips and Tricks
 
-# Examples and Tips
+## How to - Inbetween Widget
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/inbetween.gif" alt="image" />
 
-## Do this cool thing
-* Here's how
+## How to - Multiply Widget
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/multiply.gif" alt="image" />
 
-# UI Manual
+## How to - Capture Pose Widget
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/capturePose.gif" alt="image" />
 
-## Main Areas
-(breakdown image of main areas)
+## How to - World Space Widget
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/worldSpace2.gif" alt="image" />
 
-| # | Area | Description | 
-| --- | --- |--- |
-| **1** | Main Area | Here you can find various menus and options. |
-| **2** | Area 1 | Do this kind of stuff from here. |
-| **3** | Area 2 | Do this kind of stuff from here.  |
-| **4** | Area 3 | Do this kind of stuff from here. |
+## How to - In/Out Widget
+* You can adjust or reset the sensitivity of this widget through the right click menu or by ctrl+sliding.
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/inOut.gif" alt="image" />
 
-### Main Area
-(screen grab of area)
+## Expand and collapse
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/expandCollapse_v001.gif" alt="image" />
 
-| Item | Description | 
-| --- | --- |
-| Function | If you click it, it does this  | 
-
+## Pin and Rename
+* Click the text to rename the widget.
+* The pin button will store the selection, so the widget will work with those objects regardless of what's selected
+* <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/PinAndRename.gif" alt="image" />
 
 # Manual Installation (Advanced Users Only)
 
@@ -87,17 +86,16 @@ Tools should be installed to a common `eblabs_hub` folder. The `install path` sh
 ## Manual Command
 ```python
 install_path = 'E:/path/to/maya/scripts'
-package_id = 'RetimeTools'
+package_id = 'Whiskey'
 
 import os
 import sys
 if not install_path in sys.path:
-    sys.path.append(install_path)
+    sys.path.insert(0, install_path)
 
-import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
-reload(tool)
-w = tool.Window()
-w.display()
+import eblabs_hub.Whiskey.scripts.WhiskeyPro as tool
+
+tool.window.load()
 ```
 
 
