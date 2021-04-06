@@ -20,9 +20,11 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 
 # Customize your widgets
-The whisKEY toolset is designed to work around you. You can pick and choose your own widgets.
+The whisKEY toolset is designed to work around you, pick and choose the widgets you like.
 
-Here are the main widgets
+Check the right click menu to add, remove or reorder your widgets.
+<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.jpg" alt="image" />
+
 | # | Widget | Description | 
 | --- | --- |--- |
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Classic.jpg" alt="image" /> | Classic | A collection of basic animation tools. |
@@ -34,9 +36,11 @@ Here are the main widgets
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Options.jpg" alt="image" /> | Options | For setting the tangent types for your selection. Also sets the default type for new keys. |
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Widget_Principles.jpg" alt="image" /> | Animation Principles | Brush up on the basics here. |
 
-## ...do something
-
-> Here's how
+## Here are some ways you can customize
+| | | |
+|-|-|-|
+|__Bold Key__| Value1 |
+| Normal Key | Value2 |
 
 
 # Examples and Tips
