@@ -3,7 +3,7 @@
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/eblabs_groupMoveTool.png" alt="image" width="64px" />
 
 **Easily transform many objects at once, as a group.**
-> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Basics.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Basics.gif" alt="image" width="400px" />
 
 # Key Features
 > * Translate and rotate your selected objects.
@@ -28,15 +28,15 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## Change the Pivots
 * Hit the *Insert* key when the tool is active to move the pivot point.
-> * <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Insert.gif" alt="image" />
+> * <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Insert.gif" alt="image" width="400px" />
 
 ## Try scale!
 > * Using scale will move objects closer or farther apart. 
-> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Scale.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Scale.gif" alt="image" width="400px" />
 
 ## Falloff
 > * Adjust the falloff from the channel box.
-> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Scale.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/GroupMoveTool/data/GroupMoveTool_Scale.gif" alt="image" width="400px" />
 
 
 # Manual Installation (Advanced Users Only)
