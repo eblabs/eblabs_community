@@ -20,9 +20,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 
 # Customize your widgets
-The whisKEY toolset is designed to work around you, pick and choose the widgets you like.
-
-Check the right click menu to add, remove or reorder your widgets.
+The whisKEY toolset is designed to work around you, pick and choose the widgets you like. Check the right click menu to add, remove or reorder your widgets.
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/MainMenu.png" alt="image" />
 
@@ -40,8 +38,8 @@ Check the right click menu to add, remove or reorder your widgets.
 ## Here are some ways you can customize
 | | | | |
 |-|-|-|-|
-|__Bold Key__| Value1 | s| |
-| Normal Key | Value2 | | |
+|<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_A.png" alt="image" width="200"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_B.png" alt="image" width="200"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_C.png" alt="image" width="200"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/whisKEY/data/Customize_D.png" alt="image" width="200"/> |
+
 
 
 # Examples and Tips
