@@ -2,6 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/eblabs_worldSpaceTools.png" alt="image" width="64px" />
 
+
 **Advanced animation tools for manipulating animation and switching between local, world space, and other parent spaces.**
 
 # Key Features
@@ -14,6 +15,7 @@
 
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image"/>
 
+
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
 
@@ -23,6 +25,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ## Main Areas
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI_Areas.jpg" alt="image"/>
+
 
 | # | Area | Description | 
 | --- | --- |--- |
@@ -35,6 +38,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | UI | Options | 
 | --- | --- |
 | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI.jpg" alt="image"/> | <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_MainUI_Options.jpg" alt="image"/>  | 
+
 
 | Item | Description | 
 | --- | --- |
@@ -51,6 +55,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 ### Extras Tools Area
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_Extras.jpg" alt="image"/>
 
+
 | Item | Description | 
 | --- | --- |
 | Add Child COG | Select a world space control and click to create an extra child offset control. | 
@@ -60,6 +65,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ### Copy Tools Area
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_Copy.jpg" alt="image"/>
+
 
 | Item | Description | 
 | --- | --- |
@@ -71,6 +77,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 ### Path Tools Area
 <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/WorldSpaceTools/data/WorldSpaceTools_Path.jpg" alt="image"/>
+
 
 | Item | Description | 
 | --- | --- |
@@ -106,12 +113,12 @@ install_path = 'E:/path/to/maya/scripts/eblabs_hub'
 
 Good: 
 ```python
-install_path = 'E:/path/to/maya/scripts/'
+install_path = 'E:/path/to/maya/scripts'
 ```
 
 ## Launch Command
 ```python
-install_path = 'E:/path/to/maya/scripts/'
+install_path = 'E:/path/to/maya/script/'
 package_id = 'WorldSpaceTools'
 
 import os
