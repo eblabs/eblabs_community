@@ -19,23 +19,18 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 
 # I want to...
 ## ...create a new Retime Control
-
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Create.jpg" alt="image" />
 
 ## ...bake out my animation
-
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Bake.jpg" alt="image" />
 
 ## ...bake out my animation but perserve my keyframes
-
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Shuffle.jpg" alt="image" />
 
 ## ...clean up my subframe keys
-
 > <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/HowTo_Clean.jpg" alt="image" />
 
 ## ...connect my objects, but its not working
-
 > The Retime Control connects directly with Animation Curves, not objects, so be sure to make sure you have some animation keyed already.
 
 ## ...connect my animation layers, constraints, etc to the retime curve
@@ -47,30 +42,25 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # Retime Curve Examples
 
 ## Default
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Default.jpg" alt="image" />
-
-* This is the default curve and your animation will appear unchanged. Resetting will go back to this.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Default.jpg" alt="image" />
+> * This is the default curve and your animation will appear unchanged. Resetting will go back to this.
 
 ## Speed Ramp
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_SpeedRamp.jpg" alt="image" />
-
-* In this example the animation begins slightly slower and then gets faster near the end. The start and end frames have stayed the same.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_SpeedRamp.jpg" alt="image" />
+> * In this example the animation begins slightly slower and then gets faster near the end. The start and end frames have stayed the same.
 
 ## Adjustment
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Adjustment.jpg" alt="image" />
-
-* Here we are speeding up a small section in the middle. Since we are keeping the start and end frames the same, the beginning and end will slow down slightly.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Adjustment.jpg" alt="image" />
+> * Here we are speeding up a small section in the middle. Since we are keeping the start and end frames the same, the beginning and end will slow down slightly.
 
 ## Loop
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Loop.jpg" alt="image" />
-
-* Its possible to create loops or hard cuts in your retime by doing this.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Loop.jpg" alt="image" />
+> * Its possible to create loops or hard cuts in your retime by doing this.
 
 ## Reverse
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Reverse.jpg" alt="image" />
-
-* Here you can see the curve going in a reverse slow.
-* You can even have your animation play forward and then in reverse all in the same retime animation.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/Example_Reverse.jpg" alt="image" />
+> * Here you can see the curve going in a reverse slow.
+> * You can even have your animation play forward and then in reverse all in the same retime animation.
 
 # UI Manual
 
