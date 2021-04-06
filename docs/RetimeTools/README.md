@@ -5,18 +5,11 @@
 **A versitile and intuitive toolset for retiming your animation.**
 
 # Key Features
-* Experiment with timing changes non-destructively.
-* Easily bake out your retimes, no matter how complex.
-* **Shuffle** your keys! Instead of baking out every key, this feature shifts your existing keys into your the timing.
-* Create any number of retimes in your scene.
-
-
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
-
-# Archive Documentation for Classic Version
-[Classic Version Docs](https://github.com/eblabs/eblabs_community/raw/master/docs/RetimeTools/data/RetimeTools_ArchiveDocumentation.pdf)
-
-* Classic Version can be loaded from the button right click menu.
+> * Experiment with timing changes non-destructively.
+> * Easily bake out your retimes, no matter how complex.
+> * **Shuffle** your keys! Instead of baking out every key, this feature shifts your existing keys into your the timing.
+> * Create any number of retimes in your scene.
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow.jpg" alt="image" width="600"/>
 
 # How to install?
 Use the Package Manager for quickly installing and updating tools, get it here:
@@ -82,7 +75,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 # UI Manual
 
 ## Main Areas
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_MainWindow_Overview.jpg" alt="image" width="600"/>
 
 | # | Area | Description | 
 | --- | --- |--- |
@@ -92,14 +85,14 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | **4** | Tools Area | Various tools for working with Retimes. |
 
 ### Menu Area
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_FileMenu.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_FileMenu.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
 | Import/Export | **Coming Soon** Tools for import and exporting the Retime animation as json so it can be shared with other artists and departments.  | 
 
 ### Retime Controls
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_RetimeControls.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_RetimeControls.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
@@ -113,7 +106,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | Select Button | This will select the Retime Control in your maya scene so you can modify the retime animation. |
 
 ### Objects List
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_ObjectsList.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_ObjectsList.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
@@ -123,7 +116,7 @@ Use the Package Manager for quickly installing and updating tools, get it here:
 | Remove | Removes the selected items from the list, from the Retime Control.  | 
 
 ### Tools Area
-<img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_ToolsArea.gif" alt="image" />
+> <img src="https://raw.githubusercontent.com/eblabs/eblabs_community/master/docs/RetimeTools/data/RetimeTools_ToolsArea.gif" alt="image" />
 
 | Item | Description | 
 | --- | --- |
@@ -140,7 +133,7 @@ The Package Manager makes installing a simple process, but if you need to do thi
 Tools should be installed to a common `eblabs_hub` folder. The `install path` should be one folder up from the `eblabs_hub` folder. Make sure that there are blank `__init__.py` files within all folders.
 
 ```python
-install_path = 'E:/path/to/tools/folder/'
+install_path = 'E:/path/to/maya/scripts'
 package_id = 'RetimeTools'
 
 import os
@@ -149,7 +142,6 @@ if not install_path in sys.path:
     sys.path.append(install_path)
 
 import eblabs_hub.RetimeTools.scripts.RetimeTools as tool
-reload(tool)
 w = tool.Window()
 w.display()
 ```
