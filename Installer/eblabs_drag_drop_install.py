@@ -393,7 +393,7 @@ class Utils():
 
                 # reset user path
                 path = Misc.Core.get_default_user_path()
-                Misc.Core.set_user_path(path)
+                #Misc.Core.set_user_path(path)
 
                 # install
                 Misc.Core.install_package(filepaths=[filepath])
