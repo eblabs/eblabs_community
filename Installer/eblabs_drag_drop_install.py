@@ -1,5 +1,5 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 
 """
 eblabs Package Manager Drag 'n Drop Installer
@@ -11,6 +11,8 @@ and updating all of your eblabs tools.
 
 """
 
+from __future__ import unicode_literals
+
 __author__ = "Eric Bates, eblabs.com"
 __copyright__ = "Copyright (c)2019, Eric Bates"
 __credits__ = ["Eric Bates"]
@@ -20,8 +22,8 @@ __status__ = "Beta"
 __version__ = '0.6.3'
 __version_date__ = '2021-02-01'
 
-#import urllib2
-#import urllib
+# import urllib2
+# import urllib
 import tempfile
 import os
 import sys
@@ -59,7 +61,7 @@ class SummaryManager(object):
  / _ \| '_ \ | | / _` || '_ \ / __|
 |  __/| |_) || || (_| || |_) |\__ \\
  \___||_.__/ |_| \__,_||_.__/ |___/
- 
+
  Drag/Drop Package Manager Install Summary
  {0} {1}
         '''.format(__version__, __version_date__)
@@ -72,11 +74,14 @@ class SummaryManager(object):
             print_summary_items += '+----------------------------------------\n'
         print(print_summary_items)
 
+
 '''
 launcher
 '''
 
+
 def onMayaDroppedPythonFile(*args, **kwargs):
+    print(81)
     '''
     run installer
     '''
@@ -88,6 +93,7 @@ class Status(object):
     Offline = 2
     Success = 3
     Error = 4
+
 
 class Installer():
     Instance = False
@@ -119,7 +125,7 @@ class Installer():
         5. Congrats, info popup
         '''
         status = Status.Pre
-
+        print(123)
         '''
         auto run stages
         '''
@@ -135,10 +141,12 @@ class Installer():
 
                 json_info_url = 'https://raw.githubusercontent.com/eblabs/eblabs_community/master/Installer/installer_info.json'
                 info = Utils.read_json_from_url(json_info_url)
+                print(139, 'info', info)
                 # 'https://github.com/eblabs/eblabs_community/raw/master/Installer/eblabs_PackageManager_0.0.eblabs'
 
                 package_url = info['installer_url']
                 temp_filepath = Utils.download_file(url=package_url)
+                print(144, 'package_url', package_url)
                 if temp_filepath:
                     '''
                     woot, file downloaded
@@ -151,8 +159,14 @@ class Installer():
                         SummaryManager.append_item('Install Package: Error')
                         status = Status.Error
             except Exception as e:
-                SummaryManager.append_item('Install Package: Fail: {0}, {1}'.format(Exception, e))
-                SummaryManager.append_item('Install Package: Traceback: {0}'.format(traceback.format_exc()))
+                try:
+                    SummaryManager.append_item(u'Install Package: Fail: {0}, {1}'.format(Exception, e))
+                except:
+                    print(158, Exception, e)
+                try:
+                    SummaryManager.append_item(u'Install Package: Traceback: {0}'.format(traceback.format_exc()))
+                except:
+                    print(162, traceback.format_exc())
                 status = Status.Error
 
         '''
@@ -202,8 +216,9 @@ https://github.com/eblabs/eblabs_community/blob/master/Installer/versions/
         '''
         dialog
         '''
-        return_string = cmds.confirmDialog(title='eblabs Offline Install', message=text, button=['Cancel', 'Install'], defaultButton='Install',
-                           cancelButton='Cancel', dismissString='Cancel', icon='warning')
+        return_string = cmds.confirmDialog(title='eblabs Offline Install', message=text, button=['Cancel', 'Install'],
+                                           defaultButton='Install',
+                                           cancelButton='Cancel', dismissString='Cancel', icon='warning')
 
         '''
         install
@@ -230,14 +245,14 @@ class Utils():
 
     @classmethod
     def internet_on(cls):
-        
+
         try:
             url = 'github.com'
             socket.create_connection((url, 80))
             return True
         except Exception as e:
-            SummaryManager.append_item('Internet Check: Fail: {0}, {1}'.format(Exception, e))
-            #print(184, Exception, e)
+            SummaryManager.append_item(u'Internet Check: Fail: {0}, {1}'.format(Exception, e))
+            # print(184, Exception, e)
         return False
 
         # noinspection PyUnreachableCode
@@ -276,56 +291,106 @@ class Utils():
         '''
         download
         '''
+        exception_message = None
+        download_method = None
         try:
+            # python 2.7
+            import urllib
+            urllib.urlretrieve(url, filename=temp_file)
+            exception_message = None
+            download_method = 'urllib'
+        except Exception as e:
+            exception_message = (Exception, e)
+            #print(294, exception_message)
+
+        if exception_message:
             try:
-                # python 2.7
-                import urllib
-                urllib.urlretrieve(url, filename=temp_file)
-            except:
                 # python 3.7
                 import urllib.request
                 urllib.request.urlretrieve(url, filename=temp_file)
+                exception_message = None
+                download_method = 'urllib.request'
+            except Exception as e:
+                exception_message = (Exception, e)
+                #print(304, exception_message)
 
-            if os.path.exists(temp_file):
-                SummaryManager.append_item('Download Package: Success')
-                #Debugging.debug_log(205, 'file download success')
-                return temp_file
-        except Exception as e:
-            SummaryManager.append_item('Download Package: Fail: {0}, {1}'.format(Exception, e))
-            #Debugging.debug_log(208, Exception, e)
-            pass
+        if exception_message:
+            try:
+                import ssl
+                import urllib.request
 
-        return False
+                ctx = ssl.create_default_context()
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+
+                with urllib.request.urlopen(url, context=ctx) as u, open(temp_file, 'wb') as f:
+                    f.write(u.read())
+                exception_message = None
+                download_method = 'urllib.request with context'
+            except Exception as e:
+                exception_message = (Exception, e)
+                #print(317, exception_message)
+
+        if exception_message:
+            SummaryManager.append_item(u'Download Package: Fail: {0}, {1}'.format(*exception_message))
+            return None
+
+        if os.path.exists(temp_file):
+            SummaryManager.append_item('Download Package: Success [{0}]'.format(download_method))
+            # Debugging.debug_log(205, 'file download success')
+            return temp_file
 
     @classmethod
     def ask_user_for_package_file(cls):
         # get path
-        #filters = 'eblabs_PackageManager_*.zip (eblabs_PackageManager_*.zip)'
-        filters = "eblabs_PackageManager_ (eblabs_PackageManager_*.zip eblabs_PackageManager_*.eblabs)"
+        # filters = 'eblabs_PackageManager_*.zip (eblabs_PackageManager_*.zip)'
+        filters = "Package Manager Files (*.zip *.eblabs);;"
         path = cmds.fileDialog2(fileFilter=filters, dialogStyle=2, fileMode=1, okCaption='OK')
+        # print(306, 'ask_user_for_package_file', type(path), path)
         if path:
-            return str(path[0])
+            # return path[0].encode('utf8')
+            return path[0]
         else:
             return False
 
     @classmethod
     def read_json_from_url(cls, url=''):
-        #https://stackoverflow.com/questions/1393324/in-python-given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-cont
+        # https://stackoverflow.com/questions/1393324/in-python-given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-cont
         try:
-            try:
-                # python 2.7
-                import urllib
-                url_string = urllib.urlopen(url).read()
-                data = json.loads(url_string)
-                return data
-            except:
-                # python 3.7
-                import urllib.request
-                url_string = urllib.request.urlopen(url).read()
-                data = json.loads(url_string)
-                return data
-        except:
-            return False
+            # python 2.7
+            import urllib
+            url_string = urllib.urlopen(url).read()
+            data = json.loads(url_string)
+            return data
+        except Exception as e:
+            print(330, 'read_json_from_url', e)
+            pass
+
+        try:
+            # python 3.7
+            import urllib.request
+            url_string = urllib.request.urlopen(url).read()
+            data = json.loads(url_string)
+            return data
+        except Exception as e:
+            # print(340, 'read_json_from_url', e)
+            pass
+
+        try:
+            # https://stackoverflow.com/questions/27835619/urllib-and-ssl-certificate-verify-failed-error
+            import urllib.request as urlrq
+            import certifi
+            import ssl
+
+            url_string = urlrq.urlopen(url, context=ssl.create_default_context(cafile=certifi.where())).read()
+            data = json.loads(url_string)
+            # print(351, 'read_json_from_url, SUCCESS', data)
+            return data
+        except Exception as e:
+            # print(353, 'read_json_from_url', e)
+            pass
+        #
+        return None
 
     @classmethod
     def touch(cls, path):
@@ -342,7 +407,7 @@ class Utils():
             os.utime(path, None)
 
     @classmethod
-    def install_package(cls, filepath = False):
+    def install_package(cls, filepath=False):
         '''
         ask user for package
         '''
@@ -357,19 +422,19 @@ class Utils():
         2. run installer with package file
         '''
         temp_folder = cls.get_clean_temp_folder()
-        SummaryManager.append_item('Install Package: Temp Folder: {0}'.format(temp_folder))
+        SummaryManager.append_item(u'Install Package: Temp Folder: {0}'.format(temp_folder))
         if not temp_folder:
             return False
 
-        '''
-        unzip into install path
-        '''
+
+        #unzip into install path
+        #print(432, 'filepath', filepath)
         try:
             with zipfile.ZipFile(filepath, 'r') as z:
                 z.extractall(temp_folder)
-            SummaryManager.append_item('Unzip: Success: {0}, {1}'.format(temp_folder, filepath))
+            SummaryManager.append_item(u'Unzip: Success: {0}, {1}'.format(temp_folder, filepath))
         except Exception as e:
-            SummaryManager.append_item('Unzip: Fail: {0}, {1}, {2}, {3}'.format(Exception, e, temp_folder, filepath))
+            SummaryManager.append_item(u'Unzip: Fail: {0}, {1}, {2}, {3}'.format(Exception, e, temp_folder, filepath))
 
         '''
         add init files
@@ -385,31 +450,37 @@ class Utils():
         '''
         run installer command
         '''
+        install_path = temp_folder
+        #print(454, 'install_path', install_path)
         try:
-            install_path = temp_folder
             with add_path(install_path):
-                #install
+                # install
                 import scripts.Utils.Misc as Misc
 
                 # reset user path
-                path = Misc.Core.get_default_user_path()
-                #Misc.Core.set_user_path(path)
+
+                # Misc.Core.set_user_path(path)
 
                 # install
                 Misc.Core.install_package(filepaths=[filepath])
 
-                '''
-                load UI
-                '''
-                import scripts.PackageManager as tool
-                #reload(tool)
-                w = tool.Window()
-                w.display()
+                # load UI
+                try:
+                    path = Misc.Core.get_default_user_path()
+                    sys.path.insert(0, path)
+                    import eblabs_hub.PackageManager.scripts.PackageManager as tool
+                    w = tool.Window()
+                    w.display()
+                except:
+                    pass
+
+            SummaryManager.append_item(u'Temp Installer Path: {0}'.format(install_path))
             return True
         except Exception as e:
-            SummaryManager.append_item('Install Failed: isFile: {0}, {1}'.format(os.path.isfile(filepath), filepath))
-            SummaryManager.append_item('Install Failed: Exception: {0}, {1}'.format(Exception, e))
-            SummaryManager.append_item('Install Failed: Traceback: {0}'.format(traceback.format_exc()))
+            SummaryManager.append_item(u'Temp Installer Path: {0}'.format(install_path))
+            SummaryManager.append_item(u'Install Failed: isFile: {0}, {1}'.format(os.path.isfile(filepath), filepath))
+            SummaryManager.append_item(u'Install Failed: Exception: {0}, {1}'.format(Exception, e))
+            SummaryManager.append_item(u'Install Failed: Traceback: {0}'.format(traceback.format_exc()))
             return False
 
     @classmethod
@@ -440,7 +511,7 @@ class Utils():
             pass
 
         '''
-        
+
         '''
         if not os.path.exists(clean_folder):
             return False
@@ -454,6 +525,7 @@ class add_path(object):
     with add_path('/path/to/dir'):
         mod = __import__('mymodule')
     '''
+
     def __init__(self, path):
         self.path = path
 
@@ -471,4 +543,4 @@ class add_path(object):
 # into the script editor.
 # Remove "#" from the next line and run.
 
-#onMayaDroppedPythonFile()
+# onMayaDroppedPythonFile()
